@@ -129,7 +129,7 @@ CREATE TABLE category (
 
 CREATE TABLE subcategory (
     id INTEGER,
-    parent_id INTEGER NOT NULL,
+    parent_id INTEGER,
 
 
     CONSTRAINT subcategory_pk PRIMARY KEY(id),
@@ -155,6 +155,8 @@ CREATE TABLE stock (
     product_id INTEGER,
     storage_id INTEGER,
     amount INTEGER NOT NULL,
+
+    CONSTRAINT stock_amount CHECK (amount >= 0),
 
     CONSTRAINT stock_pk PRIMARY KEY(product_id,storage_id),
 

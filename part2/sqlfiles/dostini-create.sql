@@ -1,3 +1,6 @@
+PRAGMA foreign_keys=ON;
+
+
 insert into person (name, nif, telephone, birthdate, email) values ('Lizabeth', 608398666, 967202459, '1985-01-11', 'lkeuning0@irs.gov');
 insert into person (name, nif, telephone, birthdate, email) values ('Alikee', 996718319, 954370511, '1963-09-13', 'adyson1@alibaba.com');
 insert into person (name, nif, telephone, birthdate, email) values ('Panchito', 923873694, 939312677, '1977-05-22', 'passante2@shop-pro.jp');
