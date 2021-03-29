@@ -1,3 +1,4 @@
+PRAGMA foreign_keys=OFF;
 
 DROP TABLE IF EXISTS product_category_applied;
 DROP TABLE IF EXISTS cart_quantity;
@@ -13,6 +14,15 @@ DROP TABLE IF EXISTS subcategory;
 DROP TABLE IF EXISTS storage;
 DROP TABLE IF EXISTS stock;
 DROP TABLE IF EXISTS "order";
+---------------------------------------------------
+DROP TABLE IF EXISTS country;
+DROP TABLE IF EXISTS payment_credit_card;
+DROP TABLE IF EXISTS city;
+DROP TABLE IF EXISTS address;
+DROP TABLE IF EXISTS person_address_applied;
+DROP TABLE IF EXISTS shipment_type;
+DROP TABLE IF EXISTS shipment;
+DROP TABLE IF EXISTS payment_mb_way;
 
 PRAGMA foreign_keys=ON;
 
@@ -179,4 +189,91 @@ CREATE TABLE "order" (
     CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP),
     CONSTRAINT order_status_options CHECK (status == "waiting" OR status == "processing" OR status == "shipped" OR status == "delivered"),
     CONSTRAINT order_employee_assignment CHECK ((status == "waiting" AND employee_id IS NULL) OR (status != "waiting" AND employee_id IS NOT NULL))
+);
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+CREATE TABLE country(
+	country_id INTEGER NOT NULL,
+	country_name TEXT NOT NULL,
+
+	CONSTRAINT country_id_pk PRIMARY KEY(country_id)
+);
+
+CREATE TABLE city(
+	city_id INTEGER NOT NULL,
+	city_name TEXT NOT NULL,
+	country_id INTEGER NOT NULL,
+
+	CONSTRAINT city_id_pk PRIMARY KEY(city_id),
+	CONSTRAINT country_id_fk FOREIGN KEY(country_id) REFERENCES country(country_id)
+);
+
+CREATE TABLE address(
+	address_id INTEGER NOT NULL,
+	street TEXT,
+	postal_code TEXT,
+	door_number INTEGER,
+	city_id INTEGER NOT NULL,
+
+	CONSTRAINT address_id_pk PRIMARY KEY(address_id),
+	CONSTRAINT city_id_fk FOREIGN KEY(city_id) REFERENCES city(city_id)
+);
+
+CREATE TABLE person_address_applied(
+	person_id INTEGER NOT NULL,
+	address_id INTEGER NOT NULL,
+
+	CONSTRAINT person_address_pk PRIMARY KEY(person_id, address_id),
+	CONSTRAINT person_id_fk FOREIGN KEY(person_id) REFERENCES person(person_id),
+	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(address_id)
+);
+
+CREATE TABLE shipment_type(
+	shipment_type_id INTEGER PRIMARY KEY,
+	type TEXT NOT NULL,
+	base_cost REAL NOT NULL
+);
+
+CREATE TABLE shipment(
+	order_id INTEGER NOT NULL,
+	shipment_date DATE,
+	reception_date DATE,
+	distance REAL NOT NULL,
+	address_id INTEGER NOT NULL,
+	shipment_type_id INTEGER NOT NULL,
+
+	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
+		REFERENCES "order"(id),
+	CONSTRAINT address_id_fk FOREIGN KEY(address_id) 
+		REFERENCES address(address_id),
+	CONSTRAINT shipment_type_id_fk FOREIGN KEY(shipment_type_id)
+       		REFERENCES shipment_type(shipment_type_id)
+);
+
+CREATE TABLE payment_mb_way(
+	order_id INTEGER NOT NULL,
+	payment_date DATE,
+	payment_value REAL NOT NULL,
+	payment_phone_number TEXT NOT NULL,
+	
+	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
+		REFERENCES "order"(id)
+);
+
+CREATE TABLE payment_credit_card(
+	order_id INTEGER NOT NULL,
+	payment_date DATE,
+	payment_value REAL,
+	card_number TEXT NOT NULL,
+	card_name TEXT NOT NULL,
+	code TEXT NOT NULL,
+
+	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
+		REFERENCES "order"(id)
 );
