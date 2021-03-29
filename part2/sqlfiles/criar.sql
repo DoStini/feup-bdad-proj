@@ -123,7 +123,7 @@ CREATE TABLE product_category_applied(
 
 CREATE TABLE manufacturer (
     id INTEGER,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE,
 
     CONSTRAINT manufacturer_pk PRIMARY KEY(id)
 );
@@ -131,7 +131,7 @@ CREATE TABLE manufacturer (
 
 CREATE TABLE category (
     id INTEGER,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE,
 
     CONSTRAINT category_pk PRIMARY KEY(id)
 );
