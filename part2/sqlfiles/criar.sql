@@ -280,3 +280,19 @@ CREATE TABLE payment_credit_card(
 		REFERENCES "order"(id)
 );
 
+---------------------------------------------------------------------------------------------------------
+
+CREATE TABLE review(
+    order_id INTEGER,
+    product_id INTEGER,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL,
+    rating REAL NOT NULL,
+
+    CONSTRAINT review_pk PRIMARY KEY(order_id, product_id),
+    CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id),
+    CONSTRAINT product_id_fk FOREIGN KEY(product_id) REFERENCES product(id),
+
+    CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
+);
+
