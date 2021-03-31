@@ -96,8 +96,12 @@ CREATE TABLE cart_quantity(
     CONSTRAINT cart_quantity_valid_price CHECK (price > 0),
 
     CONSTRAINT cart_quantity_pk PRIMARY KEY(cart_id, product_id),
-    CONSTRAINT cart_quantity_cart_id_fk FOREIGN KEY (cart_id) REFERENCES cart(id),
+    CONSTRAINT cart_quantity_cart_id_fk FOREIGN KEY (cart_id) REFERENCES cart(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE,
     CONSTRAINT cart_quantity_prod_fk FOREIGN KEY (product_id) REFERENCES product(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE
 );
 
 
@@ -120,7 +124,9 @@ CREATE TABLE product_category_applied(
     category_id INTEGER,
 
     CONSTRAINT product_category_applied_pk PRIMARY KEY(product_id, category_id),
-    CONSTRAINT product_category_applied_prod_fk FOREIGN KEY(product_id) REFERENCES product(id),
+    CONSTRAINT product_category_applied_prod_fk FOREIGN KEY(product_id) REFERENCES product(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
     CONSTRAINT product_category_applied_cat_fk FOREIGN KEY(category_id) REFERENCES category(id)
 );
 
@@ -177,7 +183,9 @@ CREATE TABLE stock (
 
     CONSTRAINT stock_pk PRIMARY KEY(product_id,storage_id),
 
-    CONSTRAINT stock_product_id_fk FOREIGN KEY(product_id) REFERENCES product(id),
+    CONSTRAINT stock_product_id_fk FOREIGN KEY(product_id) REFERENCES product(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE,
     CONSTRAINT stock_storage_id_fk FOREIGN KEY(storage_id) REFERENCES storage(id)
 );
 
@@ -192,7 +200,9 @@ CREATE TABLE "order" (
     CONSTRAINT order_employee_id_fk FOREIGN KEY(employee_id) REFERENCES employee(id)
                             ON DELETE SET NULL
                             ON UPDATE CASCADE,
-    CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES cart(id),
+    CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES cart(id)
+                            ON DELETE RESTRICT
+                            ON UPDATE CASCADE,
 
     CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP)
     CONSTRAINT order_status_options CHECK (status == "waiting" OR status == "processing" OR status == "shipped" OR status == "delivered")
@@ -299,8 +309,12 @@ CREATE TABLE review(
     rating REAL NOT NULL,
 
     CONSTRAINT review_pk PRIMARY KEY(order_id, product_id),
-    CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id),
-    CONSTRAINT product_id_fk FOREIGN KEY(product_id) REFERENCES product(id),
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
+    CONSTRAINT product_id_fk FOREIGN KEY(product_id) REFERENCES product(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
 
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
