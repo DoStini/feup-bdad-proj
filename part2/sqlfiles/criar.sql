@@ -50,6 +50,8 @@ CREATE TABLE client(
 
     CONSTRAINT client_pk PRIMARY KEY(id),
     CONSTRAINT client_fk FOREIGN KEY(id) REFERENCES person(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE
 );
 
 
@@ -63,16 +65,20 @@ CREATE TABLE employee(
 
     CONSTRAINT employee_pk PRIMARY KEY(id),
     CONSTRAINT employee_fk FOREIGN KEY(id) REFERENCES person(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE
 );
 
 
 CREATE TABLE cart(
     id INTEGER,
     date DATE DEFAULT CURRENT_TIMESTAMP,
-    client_id INTEGER NOT NULL,
+    client_id INTEGER,
 
     CONSTRAINT cart_id_pk PRIMARY KEY (id),
-    CONSTRAINT client_id_fk FOREIGN KEY(client_id) REFERENCES Client(id),
+    CONSTRAINT client_id_fk FOREIGN KEY(client_id) REFERENCES Client(id)
+                        ON DELETE SET NULL
+                        ON UPDATE CASCADE,
 
     CONSTRAINT cart_not_current_date CHECK ( date == CURRENT_TIMESTAMP )
 );
@@ -183,8 +189,9 @@ CREATE TABLE "order" (
 
     CONSTRAINT order_pk PRIMARY KEY(cart_id),
 
-    CONSTRAINT order_employee_id_fk FOREIGN KEY(employee_id) REFERENCES employee(id),
-    
+    CONSTRAINT order_employee_id_fk FOREIGN KEY(employee_id) REFERENCES employee(id)
+                            ON DELETE SET NULL
+                            ON UPDATE CASCADE,
     CONSTRAINT order_cart_id_fk FOREIGN KEY(cart_id) REFERENCES cart(id),
 
     CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP)
@@ -228,7 +235,9 @@ CREATE TABLE person_address_applied(
 	address_id INTEGER NOT NULL,
 
 	CONSTRAINT person_address_pk PRIMARY KEY(person_id, address_id),
-	CONSTRAINT person_id_fk FOREIGN KEY(person_id) REFERENCES person(id),
+	CONSTRAINT person_id_fk FOREIGN KEY(person_id) REFERENCES person(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE,
 	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
 );
 
@@ -280,7 +289,6 @@ CREATE TABLE payment_credit_card(
 	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
 		REFERENCES "order"(id)
 );
-
 ---------------------------------------------------------------------------------------------------------
 
 CREATE TABLE review(
