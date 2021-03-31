@@ -182,17 +182,17 @@ CREATE TABLE stock (
 );
 
 CREATE TABLE "order" (
-    cart_id INTEGER NOT NULL,
+    id INTEGER,
     employee_id INTEGER,
     date DATE DEFAULT CURRENT_TIMESTAMP,
     status TEXT NOT NULL,
 
-    CONSTRAINT order_pk PRIMARY KEY(cart_id),
+    CONSTRAINT order_pk PRIMARY KEY(id),
 
     CONSTRAINT order_employee_id_fk FOREIGN KEY(employee_id) REFERENCES employee(id)
                             ON DELETE SET NULL
                             ON UPDATE CASCADE,
-    CONSTRAINT order_cart_id_fk FOREIGN KEY(cart_id) REFERENCES cart(id),
+    CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES cart(id),
 
     CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP)
     CONSTRAINT order_status_options CHECK (status == "waiting" OR status == "processing" OR status == "shipped" OR status == "delivered")
