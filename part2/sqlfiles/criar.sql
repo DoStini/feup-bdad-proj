@@ -196,30 +196,30 @@ CREATE TABLE "order" (
 
 
 CREATE TABLE country(
-	country_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	country_name TEXT NOT NULL,
 
-	CONSTRAINT country_id_pk PRIMARY KEY(country_id)
+	CONSTRAINT country_id_pk PRIMARY KEY(id)
 );
 
 CREATE TABLE city(
-	city_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	city_name TEXT NOT NULL,
 	country_id INTEGER NOT NULL,
 
-	CONSTRAINT city_id_pk PRIMARY KEY(city_id),
-	CONSTRAINT country_id_fk FOREIGN KEY(country_id) REFERENCES country(country_id)
+	CONSTRAINT city_id_pk PRIMARY KEY(id),
+	CONSTRAINT country_id_fk FOREIGN KEY(country_id) REFERENCES country(id)
 );
 
 CREATE TABLE address(
-	address_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	street TEXT,
 	postal_code TEXT,
 	door_number INTEGER,
 	city_id INTEGER NOT NULL,
 
-	CONSTRAINT address_id_pk PRIMARY KEY(address_id),
-	CONSTRAINT city_id_fk FOREIGN KEY(city_id) REFERENCES city(city_id)
+	CONSTRAINT address_id_pk PRIMARY KEY(id),
+	CONSTRAINT city_id_fk FOREIGN KEY(city_id) REFERENCES city(id)
 );
 
 CREATE TABLE person_address_applied(
@@ -227,14 +227,16 @@ CREATE TABLE person_address_applied(
 	address_id INTEGER NOT NULL,
 
 	CONSTRAINT person_address_pk PRIMARY KEY(person_id, address_id),
-	CONSTRAINT person_id_fk FOREIGN KEY(person_id) REFERENCES person(person_id),
-	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(address_id)
+	CONSTRAINT person_id_fk FOREIGN KEY(person_id) REFERENCES person(id),
+	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
 );
 
 CREATE TABLE shipment_type(
-	shipment_type_id INTEGER PRIMARY KEY,
+	id INTEGER NOT NULL,
 	type TEXT NOT NULL,
-	base_cost REAL NOT NULL
+	base_cost REAL NOT NULL,
+
+	CONSTRAINT shipment_type_id_pk PRIMARY KEY(id)
 );
 
 CREATE TABLE shipment(
@@ -249,9 +251,9 @@ CREATE TABLE shipment(
 	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
 		REFERENCES "order"(id),
 	CONSTRAINT address_id_fk FOREIGN KEY(address_id) 
-		REFERENCES address(address_id),
+		REFERENCES address(id),
 	CONSTRAINT shipment_type_id_fk FOREIGN KEY(shipment_type_id)
-       		REFERENCES shipment_type(shipment_type_id)
+       		REFERENCES shipment_type(id)
 );
 
 CREATE TABLE payment_mb_way(
@@ -277,3 +279,4 @@ CREATE TABLE payment_credit_card(
 	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
 		REFERENCES "order"(id)
 );
+
