@@ -23,6 +23,7 @@ DROP TABLE IF EXISTS person_address_applied;
 DROP TABLE IF EXISTS shipment_type;
 DROP TABLE IF EXISTS shipment;
 DROP TABLE IF EXISTS payment_mb_way;
+DROP TABLE IF EXISTS review;
 
 PRAGMA foreign_keys=ON;
 
@@ -157,7 +158,7 @@ CREATE TABLE storage(
 
     CONSTRAINT storage_pk PRIMARY KEY(id),
 
-    CONSTRAINT storage_address_id_fk FOREIGN KEY(address_id) REFERENCES Address(id)
+    CONSTRAINT storage_address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
 );
 
 
