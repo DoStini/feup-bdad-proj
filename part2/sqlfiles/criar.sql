@@ -197,7 +197,7 @@ CREATE TABLE "order" (
 
 CREATE TABLE country(
 	id INTEGER NOT NULL,
-	country_name TEXT NOT NULL,
+	country_name TEXT UNIQUE NOT NULL,
 
 	CONSTRAINT country_id_pk PRIMARY KEY(id)
 );
