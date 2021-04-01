@@ -150,7 +150,7 @@ CREATE TABLE product_category_applied(
 CREATE TABLE manufacturer (
     id INTEGER,
     name TEXT NOT NULL UNIQUE,
-    head_office_address_id INTEGER NOT NULL,
+    head_office_address_id INTEGER NOT NULL UNIQUE,
 
     CONSTRAINT manufacturer_pk FOREIGN KEY(head_office_address_id) REFERENCES address(id),
     CONSTRAINT manufacturer_pk PRIMARY KEY(id)
