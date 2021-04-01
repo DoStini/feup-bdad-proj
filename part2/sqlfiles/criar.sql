@@ -125,6 +125,8 @@ CREATE TABLE product(
 
     CONSTRAINT product_pk PRIMARY KEY (id)
     CONSTRAINT product_man_fk FOREIGN KEY(manufacturer_id) REFERENCES manufacturer(id)
+                        ON DELETE SET NULL
+                        ON UPDATE CASCADE
 );
 
 
@@ -137,6 +139,8 @@ CREATE TABLE product_category_applied(
                             ON DELETE CASCADE
                             ON UPDATE CASCADE,
     CONSTRAINT product_category_applied_cat_fk FOREIGN KEY(category_id) REFERENCES category(id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE
 );
 
 
@@ -146,7 +150,9 @@ CREATE TABLE product_category_applied(
 CREATE TABLE manufacturer (
     id INTEGER,
     name TEXT NOT NULL UNIQUE,
+    head_office_address_id INTEGER NOT NULL,
 
+    CONSTRAINT manufacturer_pk FOREIGN KEY(head_office_address_id) REFERENCES address(id),
     CONSTRAINT manufacturer_pk PRIMARY KEY(id)
 );
 
@@ -166,8 +172,12 @@ CREATE TABLE subcategory (
 
     CONSTRAINT subcategory_pk PRIMARY KEY(id),
     
-    CONSTRAINT subcategory_id_fk FOREIGN KEY(id) REFERENCES category(id),
+    CONSTRAINT subcategory_id_fk FOREIGN KEY(id) REFERENCES category(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE,
     CONSTRAINT subcategory_parent_id_fk FOREIGN KEY(parent_id) REFERENCES category(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE
 );
 
 
@@ -236,6 +246,8 @@ CREATE TABLE city(
 
 	CONSTRAINT city_id_pk PRIMARY KEY(id),
 	CONSTRAINT country_id_fk FOREIGN KEY(country_id) REFERENCES country(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 
 CREATE TABLE address(
@@ -246,7 +258,9 @@ CREATE TABLE address(
 	city_id INTEGER NOT NULL,
 
 	CONSTRAINT address_id_pk PRIMARY KEY(id),
-	CONSTRAINT city_id_fk FOREIGN KEY(city_id) REFERENCES city(id)
+	CONSTRAINT city_id_fk FOREIGN KEY(city_id) REFERENCES city(id)  
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 
 CREATE TABLE person_address_applied(
@@ -258,6 +272,8 @@ CREATE TABLE person_address_applied(
                         ON DELETE CASCADE
                         ON UPDATE CASCADE,
 	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 
 CREATE TABLE shipment_type(
@@ -277,12 +293,15 @@ CREATE TABLE shipment(
 	shipment_type_id INTEGER NOT NULL,
 
 	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
-		REFERENCES "order"(id),
-	CONSTRAINT address_id_fk FOREIGN KEY(address_id) 
-		REFERENCES address(id),
-	CONSTRAINT shipment_type_id_fk FOREIGN KEY(shipment_type_id)
-       		REFERENCES shipment_type(id)
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE,
+	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE,
+	CONSTRAINT shipment_type_id_fk FOREIGN KEY(shipment_type_id) REFERENCES shipment_type(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 
 CREATE TABLE payment_mb_way(
@@ -292,8 +311,9 @@ CREATE TABLE payment_mb_way(
 	payment_phone_number TEXT NOT NULL,
 	
 	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
-		REFERENCES "order"(id)
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 
 CREATE TABLE payment_credit_card(
@@ -305,8 +325,9 @@ CREATE TABLE payment_credit_card(
 	code TEXT NOT NULL,
 
 	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) 
-		REFERENCES "order"(id)
+	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+                        ON DELETE RESTRICT
+                        ON UPDATE CASCADE
 );
 ---------------------------------------------------------------------------------------------------------
 
