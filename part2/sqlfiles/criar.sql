@@ -35,8 +35,17 @@ CREATE TABLE person(
     telephone INTEGER NOT NULL, /* Same here */
     email TEXT NOT NULL UNIQUE,
 
-    CONSTRAINT person_valid_nif CHECK(length(nif) == 9),
-    CONSTRAINT person_valid_phone CHECK(length(telephone) == 9),
+    CONSTRAINT person_valid_email 
+            CHECK (
+                email LIKE '_%@%_%._%' 
+                AND email NOT LIKE '%\%'
+                AND email NOT LIKE '%/%'
+                AND email NOT LIKE '%?%'
+                AND email NOT LIKE '%:%'
+                AND email NOT LIKE '% %'
+                AND email NOT LIKE '%@%@%'),
+    CONSTRAINT person_valid_nif CHECK(length(nif) >= 4),
+    CONSTRAINT person_valid_phone CHECK(length(telephone) BETWEEN 7 AND 15),
     CONSTRAINT person_valid_birthdate CHECK(birthdate==strftime('%Y-%m-%d', birthdate) AND birthdate < CURRENT_TIMESTAMP),
     CONSTRAINT person_pk PRIMARY KEY(id)
 );
