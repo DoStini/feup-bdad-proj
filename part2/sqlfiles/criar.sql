@@ -288,15 +288,15 @@ CREATE TABLE shipment_type(
 );
 
 CREATE TABLE shipment(
-	order_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	shipment_date DATE, -- Waits until order status is shipped before being filled
 	reception_date DATE,
 	distance REAL NOT NULL,
 	address_id INTEGER NOT NULL,
 	shipment_type_id INTEGER NOT NULL,
 
-	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+	CONSTRAINT order_id_pk PRIMARY KEY(id),
+	CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES "order"(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE,
 	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
@@ -305,16 +305,18 @@ CREATE TABLE shipment(
 	CONSTRAINT shipment_type_id_fk FOREIGN KEY(shipment_type_id) REFERENCES shipment_type(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
+
+	CONSTRAINT shipment_reception_after_shipment CHECK (reception_date IS NULL OR (shipment_date IS NOT NULL AND reception_date > shipment_date))  
 );
 
 CREATE TABLE payment_mb_way(
-	order_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	payment_date DATE DEFAULT CURRENT_TIMESTAMP,
 	payment_value REAL NOT NULL,
 	payment_phone_number TEXT NOT NULL,
 	
-	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+	CONSTRAINT order_id_pk PRIMARY KEY(id),
+	CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES "order"(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
 
@@ -324,15 +326,15 @@ CREATE TABLE payment_mb_way(
 );
 
 CREATE TABLE payment_credit_card(
-	order_id INTEGER NOT NULL,
+	id INTEGER NOT NULL,
 	payment_date DATE DEFAULT CURRENT_TIMESTAMP,
 	payment_value REAL NOT NULL,
 	card_number TEXT NOT NULL,
 	card_name TEXT NOT NULL,
 	code TEXT NOT NULL,
 
-	CONSTRAINT order_id_pk PRIMARY KEY(order_id),
-	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
+	CONSTRAINT order_id_pk PRIMARY KEY(id),
+	CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES "order"(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
 
