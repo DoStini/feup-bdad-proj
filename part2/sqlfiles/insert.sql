@@ -942,10 +942,18 @@ insert into "order" (id, employee_id, status) values (6, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (9, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (10, 60, 'shipped');
 
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2020-04-03 13:43:20', null, 569.71373, 19, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2020-07-21 08:02:06', null, 135.8015, 37, 2);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (9, '2020-07-04 04:40:39', null, 798.1715, 51, 1);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (4, '2020-05-15 12:49:27', null, 569.7094, 7, 4);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2020-05-24 14:04:12', '2021-01-12 10:08:39', 616.72763, 40, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2020-06-10 06:38:42', '2021-01-06 07:08:39', 739.12758, 63, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2020-04-20 13:50:36', null, 693.69008, 63, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2022-04-03 13:43:20', null, 569.71373, 19, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2022-07-21 08:02:06', null, 135.8015, 37, 2);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (9, '2022-07-04 04:40:39', null, 798.1715, 51, 1);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (4, '2022-05-15 12:49:27', null, 569.7094, 7, 4);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
+
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (8, 13.43, '2237190123');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (10, 3.84, '2735847086');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (9, 11.88, '9615238163');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (4, 19.1, '8084323723');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (1, 4.45, '2947614371');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (5, 36.87, '9832606261');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (7, 52.53, '9435880211');
