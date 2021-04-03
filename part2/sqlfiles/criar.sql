@@ -177,7 +177,8 @@ CREATE TABLE subcategory (
                         ON UPDATE CASCADE,
     CONSTRAINT subcategory_parent_id_fk FOREIGN KEY(parent_id) REFERENCES category(id)
                         ON DELETE CASCADE
-                        ON UPDATE CASCADE
+                        ON UPDATE CASCADE,
+    CONSTRAINT subcategory_check_ids CHECK (id != parent_id)
 );
 
 

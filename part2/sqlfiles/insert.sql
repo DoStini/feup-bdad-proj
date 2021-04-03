@@ -845,16 +845,16 @@ insert into category (name) values ('est');
 insert into category (name) values ('lectus in');
 insert into category (name) values ('erat');
 
-insert into subcategory (parent_id) values (5);
-insert into subcategory (parent_id) values (5);
-insert into subcategory (parent_id) values (3);
-insert into subcategory (parent_id) values (11);
-insert into subcategory (parent_id) values (8);
-insert into subcategory (parent_id) values (7);
-insert into subcategory (parent_id) values (27);
-insert into subcategory (parent_id) values (7);
-insert into subcategory (parent_id) values (25);
-insert into subcategory (parent_id) values (26);
+insert into subcategory (id,parent_id) values (21,5);
+insert into subcategory (id,parent_id) values (22,5);
+insert into subcategory (id,parent_id) values (23,3);
+insert into subcategory (id,parent_id) values (24,11);
+insert into subcategory (id,parent_id) values (25,8);
+insert into subcategory (id,parent_id) values (26,7);
+insert into subcategory (id,parent_id) values (27,22);
+insert into subcategory (id,parent_id) values (28,7);
+insert into subcategory (id,parent_id) values (29,25);
+insert into subcategory (id,parent_id) values (30,26);
 
 insert into storage (storage_name, address_id) values ('Patric', 42);
 insert into storage (storage_name, address_id) values ('Lief', 35);
