@@ -954,6 +954,8 @@ insert into payment_mb_way (id, payment_value, payment_phone_number) values (8, 
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (10, 3.84, '2735847086');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (9, 11.88, '9615238163');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (4, 19.1, '8084323723');
-insert into payment_mb_way (id, payment_value, payment_phone_number) values (1, 4.45, '2947614371');
-insert into payment_mb_way (id, payment_value, payment_phone_number) values (5, 36.87, '9832606261');
-insert into payment_mb_way (id, payment_value, payment_phone_number) values (7, 52.53, '9435880211');
+
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (1, 84.13, '4053102049', 'Conrade Shergold', 564);
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (5, 47.6, '2928616322', 'Woodie Sporgeon', 788);
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (7, 4.23, '7494418075', 'Joli Yeo', 30);
+
