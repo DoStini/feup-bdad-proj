@@ -152,7 +152,7 @@ CREATE TABLE manufacturer (
     name TEXT NOT NULL UNIQUE,
     head_office_address_id INTEGER NOT NULL UNIQUE,
 
-    CONSTRAINT manufacturer_pk FOREIGN KEY(head_office_address_id) REFERENCES address(id),
+    CONSTRAINT manufacturer_fk FOREIGN KEY(head_office_address_id) REFERENCES address(id),
     CONSTRAINT manufacturer_pk PRIMARY KEY(id)
 );
 
@@ -167,7 +167,7 @@ CREATE TABLE category (
 
 CREATE TABLE subcategory (
     id INTEGER,
-    parent_id INTEGER,
+    parent_id INTEGER NOT NULL,
 
 
     CONSTRAINT subcategory_pk PRIMARY KEY(id),
@@ -178,14 +178,14 @@ CREATE TABLE subcategory (
     CONSTRAINT subcategory_parent_id_fk FOREIGN KEY(parent_id) REFERENCES category(id)
                         ON DELETE CASCADE
                         ON UPDATE CASCADE,
-    CONSTRAINT subcategory_check_ids CHECK (id != parent_id)
+    CONSTRAINT subcategory_check_ids CHECK (parent_id != id)
 );
 
 
 
 CREATE TABLE storage(
     id INTEGER,
-    storage_name TEXT NOT NULL,
+    name TEXT NOT NULL,
     address_id INTEGER NOT NULL,
 
     CONSTRAINT storage_pk PRIMARY KEY(id),
