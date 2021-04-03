@@ -81,7 +81,7 @@ CREATE TABLE employee(
 
 CREATE TABLE cart(
     id INTEGER,
-    date DATE DEFAULT CURRENT_TIMESTAMP,
+    date DATE DEFAULT CURRENT_TIMESTAMP, -- Using triggers we will be able to make this read-only
     client_id INTEGER,
 
     CONSTRAINT cart_id_pk PRIMARY KEY (id),
@@ -287,7 +287,7 @@ CREATE TABLE shipment_type(
 
 CREATE TABLE shipment(
 	order_id INTEGER NOT NULL,
-	shipment_date DATE,
+	shipment_date DATE, -- Waits until order status is shipped before being filled
 	reception_date DATE,
 	distance REAL NOT NULL,
 	address_id INTEGER NOT NULL,
@@ -307,7 +307,7 @@ CREATE TABLE shipment(
 
 CREATE TABLE payment_mb_way(
 	order_id INTEGER NOT NULL,
-	payment_date DATE,
+	payment_date DATE DEFAULT CURRENT_TIMESTAMP,
 	payment_value REAL NOT NULL,
 	payment_phone_number TEXT NOT NULL,
 	
@@ -315,12 +315,16 @@ CREATE TABLE payment_mb_way(
 	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
+
+	
+
+    	CONSTRAINT payment_mb_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
 );
 
 CREATE TABLE payment_credit_card(
 	order_id INTEGER NOT NULL,
-	payment_date DATE,
-	payment_value REAL,
+	payment_date DATE DEFAULT CURRENT_TIMESTAMP,
+	payment_value REAL NOT NULL,
 	card_number TEXT NOT NULL,
 	card_name TEXT NOT NULL,
 	code TEXT NOT NULL,
@@ -329,6 +333,9 @@ CREATE TABLE payment_credit_card(
 	CONSTRAINT order_id_fk FOREIGN KEY(order_id) REFERENCES "order"(id)
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
+
+	
+    	CONSTRAINT payment_credit_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
 );
 ---------------------------------------------------------------------------------------------------------
 
