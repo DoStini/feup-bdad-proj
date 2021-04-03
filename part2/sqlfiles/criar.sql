@@ -279,10 +279,12 @@ CREATE TABLE person_address_applied(
 
 CREATE TABLE shipment_type(
 	id INTEGER NOT NULL,
-	type TEXT NOT NULL,
+	type TEXT UNIQUE NOT NULL,
 	base_cost REAL NOT NULL,
 
-	CONSTRAINT shipment_type_id_pk PRIMARY KEY(id)
+	CONSTRAINT shipment_type_id_pk PRIMARY KEY(id),
+	CONSTRAINT shipment_type_invalid CHECK(type LIKE 'ctt' OR type LIKE 'dpd' OR type LIKE 'dhl' 
+						OR type LIKE 'ups' OR type LIKE 'inWarehouse')
 );
 
 CREATE TABLE shipment(
