@@ -284,7 +284,9 @@ CREATE TABLE shipment_type(
 
 	CONSTRAINT shipment_type_id_pk PRIMARY KEY(id),
 	CONSTRAINT shipment_type_invalid CHECK(type LIKE 'ctt' OR type LIKE 'dpd' OR type LIKE 'dhl' 
-						OR type LIKE 'ups' OR type LIKE 'inWarehouse')
+						OR type LIKE 'ups' OR type LIKE 'inWarehouse'),
+
+	CONSTRAINT shipment_type_cost CHECK(base_cost >= 0)
 );
 
 CREATE TABLE shipment(
