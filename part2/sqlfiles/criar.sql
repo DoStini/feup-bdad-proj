@@ -152,7 +152,9 @@ CREATE TABLE manufacturer (
     name TEXT NOT NULL UNIQUE,
     head_office_address_id INTEGER NOT NULL UNIQUE,
 
-    CONSTRAINT manufacturer_fk FOREIGN KEY(head_office_address_id) REFERENCES address(id),
+    CONSTRAINT manufacturer_fk FOREIGN KEY(head_office_address_id) REFERENCES address(id)
+                            ON DELETE RESTRICT
+                            ON UPDATE CASCADE,
     CONSTRAINT manufacturer_pk PRIMARY KEY(id)
 );
 
@@ -173,11 +175,11 @@ CREATE TABLE subcategory (
     CONSTRAINT subcategory_pk PRIMARY KEY(id),
     
     CONSTRAINT subcategory_id_fk FOREIGN KEY(id) REFERENCES category(id)
-                        ON DELETE CASCADE
-                        ON UPDATE CASCADE,
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
     CONSTRAINT subcategory_parent_id_fk FOREIGN KEY(parent_id) REFERENCES category(id)
-                        ON DELETE CASCADE
-                        ON UPDATE CASCADE,
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
     CONSTRAINT subcategory_check_ids CHECK (parent_id != id)
 );
 
@@ -191,6 +193,8 @@ CREATE TABLE storage(
     CONSTRAINT storage_pk PRIMARY KEY(id),
 
     CONSTRAINT storage_address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
+                            ON DELETE RESTRICT
+                            ON UPDATE CASCADE
 );
 
 
@@ -204,9 +208,11 @@ CREATE TABLE stock (
     CONSTRAINT stock_pk PRIMARY KEY(product_id,storage_id),
 
     CONSTRAINT stock_product_id_fk FOREIGN KEY(product_id) REFERENCES product(id)
-                        ON DELETE CASCADE
-                        ON UPDATE CASCADE,
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE,
     CONSTRAINT stock_storage_id_fk FOREIGN KEY(storage_id) REFERENCES storage(id)
+                            ON DELETE RESTRICT
+                            ON UPDATE CASCADE
 );
 
 CREATE TABLE "order" (
