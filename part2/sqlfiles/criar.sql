@@ -279,7 +279,7 @@ CREATE TABLE person_address_applied(
                         ON DELETE CASCADE
                         ON UPDATE CASCADE,
 	CONSTRAINT address_id_fk FOREIGN KEY(address_id) REFERENCES address(id)
-                        ON DELETE RESTRICT
+                        ON DELETE CASCADE
                         ON UPDATE CASCADE
 );
 
