@@ -66,10 +66,10 @@ CREATE TABLE client(
 
 CREATE TABLE employee(
     id INTEGER,
-    salary INTEGER NOT NULL,
+    hourly_salary REAL NOT NULL,
     weekly_hours INTEGER NOT NULL,
 
-    CONSTRAINT employee_valid_salary CHECK (salary > 0),
+    CONSTRAINT employee_valid_salary CHECK (hourly_salary > 0),
     CONSTRAINT employee_valid_hours CHECK (weekly_hours > 0 AND weekly_hours <= 168),
 
     CONSTRAINT employee_pk PRIMARY KEY(id),
@@ -97,7 +97,7 @@ CREATE TABLE cart_quantity(
     cart_id INTEGER,
     product_id INTEGER,
     amount INTEGER NOT NULL,
-    price INTEGER,
+    price REAL,
     -- Podemos usar o price apenas para mais tarde, atualizar todos ao fazer uma order para ter o preço atualizado
     -- Por enquanto pode então ser qualquer valor, visto que depois vai ser atualizado
 
@@ -117,7 +117,7 @@ CREATE TABLE cart_quantity(
 CREATE TABLE product(
     id INTEGER,
     name TEXT NOT NULL,
-    price INTEGER NOT NULL,
+    price REAL NOT NULL,
     description TEXT,
     manufacturer_id INTEGER,
 
