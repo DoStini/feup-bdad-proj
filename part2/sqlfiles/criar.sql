@@ -253,8 +253,8 @@ CREATE TABLE city(
 
 CREATE TABLE address(
 	id INTEGER NOT NULL,
-	street TEXT,
-	postal_code TEXT,
+	street TEXT NOT NULL,
+	postal_code TEXT NOT NULL,
 	door_number INTEGER,
 	city_id INTEGER NOT NULL,
 
