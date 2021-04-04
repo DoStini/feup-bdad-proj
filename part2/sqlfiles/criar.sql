@@ -225,8 +225,8 @@ CREATE TABLE "order" (
                             ON UPDATE CASCADE,
 
     CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP)
-    CONSTRAINT order_status_options CHECK (status == "waiting" OR status == "processing" OR status == "shipped" OR status == "delivered")
-    CONSTRAINT order_employee_assignment CHECK ((status == "waiting" AND employee_id IS NULL) OR (status != "waiting" AND employee_id IS NOT NULL))
+    CONSTRAINT order_status_options CHECK (status LIKE 'waiting' OR status LIKE 'processing' OR status LIKE 'shipped' OR status LIKE 'delivered')
+    CONSTRAINT order_employee_assignment CHECK ((status == 'waiting' AND employee_id IS NULL) OR (status != 'waiting' AND employee_id IS NOT NULL))
 );
 
 
