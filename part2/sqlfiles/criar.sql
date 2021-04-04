@@ -290,7 +290,9 @@ CREATE TABLE shipment_type(
 
 	CONSTRAINT shipment_type_id_pk PRIMARY KEY(id),
 	CONSTRAINT shipment_type_invalid CHECK(type LIKE 'ctt' OR type LIKE 'dpd' OR type LIKE 'dhl' 
-						OR type LIKE 'ups' OR type LIKE 'inWarehouse')
+						OR type LIKE 'ups' OR type LIKE 'inWarehouse'),
+
+	CONSTRAINT shipment_type_cost CHECK(base_cost >= 0)
 );
 
 CREATE TABLE shipment(
@@ -312,7 +314,8 @@ CREATE TABLE shipment(
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
 
-	CONSTRAINT shipment_reception_after_shipment CHECK (reception_date IS NULL OR (shipment_date IS NOT NULL AND reception_date > shipment_date))  
+	CONSTRAINT shipment_reception_after_shipment CHECK (reception_date IS NULL OR (shipment_date IS NOT NULL AND reception_date > shipment_date)),
+	CONSTRAINT shipment_distance_positive CHECK (distance >= 0)	
 );
 
 CREATE TABLE payment_mb_way(
@@ -328,7 +331,8 @@ CREATE TABLE payment_mb_way(
 
 	
 
-    	CONSTRAINT payment_mb_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
+    	CONSTRAINT payment_mb_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP),
+	CONSTRAINT payment_value_positive CHECK (payment_value > 0)
 );
 
 CREATE TABLE payment_credit_card(
@@ -346,6 +350,7 @@ CREATE TABLE payment_credit_card(
 
 	
     	CONSTRAINT payment_credit_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
+	CONSTRAINT payment_value_positive CHECK (payment_value > 0)
 );
 ---------------------------------------------------------------------------------------------------------
 
