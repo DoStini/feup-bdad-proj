@@ -306,7 +306,8 @@ CREATE TABLE shipment(
                         ON DELETE RESTRICT
                         ON UPDATE CASCADE
 
-	CONSTRAINT shipment_reception_after_shipment CHECK (reception_date IS NULL OR (shipment_date IS NOT NULL AND reception_date > shipment_date))  
+	CONSTRAINT shipment_reception_after_shipment CHECK (reception_date IS NULL OR (shipment_date IS NOT NULL AND reception_date > shipment_date)),
+	CONSTRAINT shipment_distance_positive CHECK (distance >= 0)	
 );
 
 CREATE TABLE payment_mb_way(
@@ -322,7 +323,8 @@ CREATE TABLE payment_mb_way(
 
 	
 
-    	CONSTRAINT payment_mb_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
+    	CONSTRAINT payment_mb_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP),
+	CONSTRAINT payment_value_positive CHECK (payment_value > 0)
 );
 
 CREATE TABLE payment_credit_card(
@@ -340,6 +342,7 @@ CREATE TABLE payment_credit_card(
 
 	
     	CONSTRAINT payment_credit_not_current_date CHECK (payment_date == CURRENT_TIMESTAMP)
+	CONSTRAINT payment_value_positive CHECK (payment_value > 0)
 );
 ---------------------------------------------------------------------------------------------------------
 
