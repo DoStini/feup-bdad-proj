@@ -9,6 +9,6 @@ WHEN new.id NOT IN (
         FROM payment_mb_way
 )
 BEGIN
-        SELECT RAISE(ABORT, 'ERROR: Order must be payed before being shipped!');
+        SELECT RAISE(ABORT, 'ERROR: Order must be paid before being shipped!');
 END;
 
