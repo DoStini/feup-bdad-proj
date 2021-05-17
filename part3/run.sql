@@ -1,3 +1,5 @@
-.read schema.sql
+.read gatilhoN_remove.sql
+.read gatilhoN_adiciona.sql
+.read criar.sql
 .read setup.sql
-.read insert.sql
+.read povoar.sql
