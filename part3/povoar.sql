@@ -956,7 +956,6 @@ insert into shipment (id, shipment_date, reception_date, distance, address_id, s
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
--- insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (2, '2022-04-20 13:50:36', null, 693.69008, 63, 3); -> error on insert because 2 was not paid, it works!
 
 insert into review (order_id, product_id, title, description, rating) values (1, 57, 'Blot, The', 'Cross-group global synergy', 0.2);
 insert into review (order_id, product_id, title, description, rating) values (2, 114, 'Killer Inside Me, The', 'User-friendly background project', 0.1);
