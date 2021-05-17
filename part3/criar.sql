@@ -372,3 +372,16 @@ CREATE TABLE review(
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
 
+DROP VIEW IF EXISTS order_paid;
+
+CREATE VIEW order_paid AS
+SELECT "order".id as id
+FROM "order"
+WHERE "order".id IN (
+	SELECT id
+	FROM payment_credit_card
+	UNION
+	SELECT id
+	FROM payment_mb_way
+);
+
