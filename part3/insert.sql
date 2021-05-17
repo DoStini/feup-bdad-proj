@@ -966,3 +966,4 @@ insert into review (order_id, product_id, title, description, rating) values (6,
 insert into review (order_id, product_id, title, description, rating) values (7, 5, 'Fallen Idol, The', 'Optional context-sensitive paradigm', 0.9);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
+
