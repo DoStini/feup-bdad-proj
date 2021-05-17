@@ -940,14 +940,6 @@ insert into "order" (id, employee_id, status) values (6, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (9, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (10, 60, 'shipped');
 
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2022-04-03 13:43:20', null, 569.71373, 19, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2022-07-21 08:02:06', null, 135.8015, 37, 2);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (9, '2022-07-04 04:40:39', null, 798.1715, 51, 1);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (4, '2022-05-15 12:49:27', null, 569.7094, 7, 4);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
-insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
-
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (8, 13.43, '2237190123');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (10, 3.84, '2735847086');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (9, 11.88, '9615238163');
@@ -956,6 +948,15 @@ insert into payment_mb_way (id, payment_value, payment_phone_number) values (4, 
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (1, 84.13, '4053102049', 'Conrade Shergold', 564);
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (5, 47.6, '2928616322', 'Woodie Sporgeon', 788);
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (7, 4.23, '7494418075', 'Joli Yeo', 30);
+
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2022-04-03 13:43:20', null, 569.71373, 19, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2022-07-21 08:02:06', null, 135.8015, 37, 2);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (9, '2022-07-04 04:40:39', null, 798.1715, 51, 1);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (4, '2022-05-15 12:49:27', null, 569.7094, 7, 4);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
+-- insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (2, '2022-04-20 13:50:36', null, 693.69008, 63, 3); -> error on insert because 2 was not paid, it works!
 
 insert into review (order_id, product_id, title, description, rating) values (1, 57, 'Blot, The', 'Cross-group global synergy', 0.2);
 insert into review (order_id, product_id, title, description, rating) values (2, 114, 'Killer Inside Me, The', 'User-friendly background project', 0.1);
@@ -966,3 +967,4 @@ insert into review (order_id, product_id, title, description, rating) values (6,
 insert into review (order_id, product_id, title, description, rating) values (7, 5, 'Fallen Idol, The', 'Optional context-sensitive paradigm', 0.9);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
+
