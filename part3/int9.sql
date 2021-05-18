@@ -23,10 +23,12 @@ JOIN cart ON (order_id = cart.id)
 GROUP BY order_id
 HAVING sum(price) >= 20;
 
-SELECT client.id
+SELECT client.id as client_id_bonus, person.name as client_name
 FROM paid_order_last_30_days
 JOIN cart ON (paid_order_last_30_days.order_id = cart.id)
 JOIN client ON (cart.client_id = client.id)
+JOIN person ON (client.id = person.id)
 WHERE client.id NOT IN unreviewed_last_30_days AND client.id IN paid_orders_morethan_20
 GROUP BY client.id
 HAVING count(client.id) >= 2;
+
