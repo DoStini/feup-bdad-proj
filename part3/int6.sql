@@ -20,7 +20,10 @@ SELECT * FROM cart_quantity JOIN product_pairs_match --JOIN product
     WHERE cart_quantity.cart_id=4
     ORDER BY pid2;
 
-SELECT cart_id, pid2, num, avg(match) as fixed_match FROM cart_quantity JOIN product_pairs_match --JOIN product
-    ON cart_quantity.product_id=pid1 --AND product.id=pid2
-    WHERE cart_quantity.cart_id=4
-    GROUP BY pid2;
+SELECT cart_id, pid2 AS sug_pid, product.name as sug_product_name, product.description as sug_product_name, avg(match) as avg_match 
+    FROM cart_quantity JOIN product_pairs_match JOIN product
+    ON cart_quantity.product_id=pid1 AND product.id=pid2
+    WHERE cart_quantity.cart_id=4 AND pid2 NOT IN 
+            (SELECT product_id FROM cart_quantity WHERE cart_id=4)
+    GROUP BY pid2
+    ORDER BY avg_match DESC;
