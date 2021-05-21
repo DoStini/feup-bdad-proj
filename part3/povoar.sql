@@ -646,6 +646,12 @@ insert into cart_quantity (cart_id, product_id, amount) values (4, 44, 42);
 insert into cart_quantity (cart_id, product_id, amount) values (2, 31, 75);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 78, 83);
 insert into cart_quantity (cart_id, product_id, amount) values (5, 5, 84);
+insert into cart_quantity (cart_id, product_id, amount) values (6, 5, 20);
+insert into cart_quantity (cart_id, product_id, amount) values (7, 3, 84);
+insert into cart_quantity (cart_id, product_id, amount) values (6, 13, 84);
+insert into cart_quantity (cart_id, product_id, amount) values (10, 5, 20);
+insert into cart_quantity (cart_id, product_id, amount) values (10, 3, 84);
+insert into cart_quantity (cart_id, product_id, amount) values (10, 13, 84);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 138, 85);
 insert into cart_quantity (cart_id, product_id, amount) values (3, 52, 80);
 insert into cart_quantity (cart_id, product_id, amount) values (1, 60, 95);
@@ -705,6 +711,8 @@ insert into cart_quantity (cart_id, product_id, amount) values (8, 79, 6);
 insert into cart_quantity (cart_id, product_id, amount) values (10, 21, 20);
 insert into cart_quantity (cart_id, product_id, amount) values (10, 34, 20);
 insert into cart_quantity (cart_id, product_id, amount) values (10, 39, 20);
+insert into cart_quantity (cart_id, product_id, amount) values (10, 6, 20);
+insert into cart_quantity (cart_id, product_id, amount) values (10, 15, 20);
 
 ---------------------------------------------------------------------------------------------------------
 
