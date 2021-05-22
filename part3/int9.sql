@@ -21,7 +21,7 @@ FROM paid_order_last_30_days
 JOIN cart_quantity ON (paid_order_last_30_days.order_id = cart_quantity.cart_id)
 JOIN cart ON (order_id = cart.id)
 GROUP BY order_id
-HAVING sum(price) >= 20;
+HAVING sum(price*cart_quantity.amount) >= 20;
 
 SELECT client.id as client_id_bonus, person.name as client_name
 FROM paid_order_last_30_days
