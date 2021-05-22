@@ -24,7 +24,13 @@ BEGIN
     ELSE
         0
     END;
-    SELECT raise(abort, "funcemina totil nice");
+
+    UPDATE cart_quantity 
+        SET price = (SELECT price FROM product 
+                        WHERE product.id = cart_quantity.product_id)
+        WHERE 
+            cart_quantity.cart_id=new.id;
+    -- SELECT raise(abort, "funcemina totil nice");
 
 END;
 
@@ -58,6 +64,14 @@ SELECT * FROM count_valid_stock
     WHERE cart_id=(SELECT * FROM current)
         AND prods=(SELECT count(*) FROM cart_quantity 
                 WHERE cart_quantity.cart_id=(SELECT * from current));
+
+-- SELECT * FROM count_valid_stock 
+--     WHERE cart_id=(SELECT * FROM current)
+--         AND prods=(SELECT count(*) FROM cart_quantity 
+--                 WHERE cart_quantity.cart_id=(SELECT * from current))
+--     ORDER BY (SELECT sum(amount) FROM stock WHERE )
+--     LIMIT 1;
+
 
 SELECT * FROM temp_valid_storages;
 
