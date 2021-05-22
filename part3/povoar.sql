@@ -367,6 +367,8 @@ insert into cart (client_id) values(7);
 insert into cart (client_id) values(8);
 insert into cart (client_id) values(9);
 insert into cart (client_id) values(10);
+insert into cart (client_id) values(11);
+insert into cart (client_id) values(12);
 
 insert into manufacturer (name, head_office_address_id) values ('Eidel', 100);
 insert into manufacturer (name, head_office_address_id) values ('Skibox', 48);
@@ -696,8 +698,16 @@ insert into cart_quantity (cart_id, product_id, amount) values (4, 73, 26);
 insert into cart_quantity (cart_id, product_id, amount) values (2, 127, 90);
 insert into cart_quantity (cart_id, product_id, amount) values (3, 162, 27);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 6, 77);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 106, 72);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 152, 92);
+insert into cart_quantity (cart_id, product_id, amount) values (2, 106, 12);
+insert into cart_quantity (cart_id, product_id, amount) values (11, 152, 10);
+insert into cart_quantity (cart_id, product_id, amount) values (11, 102, 51);
+insert into cart_quantity (cart_id, product_id, amount) values (11, 21, 4);
+insert into cart_quantity (cart_id, product_id, amount) values (11, 189, 3);
+insert into cart_quantity (cart_id, product_id, amount) values (11, 10, 10);
+insert into cart_quantity (cart_id, product_id, amount) values (12, 10, 10);
+insert into cart_quantity (cart_id, product_id, amount) values (12, 11, 1000);
+insert into cart_quantity (cart_id, product_id, amount) values (12, 50, 10);
+insert into cart_quantity (cart_id, product_id, amount) values (12, 59, 10);
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -829,6 +839,27 @@ insert into storage (name, address_id) values ('Graig', 12);
 insert into storage (name, address_id) values ('Darcy', 27);
 insert into storage (name, address_id) values ('Perry', 24);
 insert into storage (name, address_id) values ('Georgeanne', 9);
+insert into storage (name, address_id) values ('Lisboa', 20);
+insert into storage (name, address_id) values ('Porto', 40);
+insert into storage (name, address_id) values ('Coimbra', 32);
+
+insert into stock (product_id, storage_id, amount) values (10, 21, 60);
+insert into stock (product_id, storage_id, amount) values (21, 21, 60);
+insert into stock (product_id, storage_id, amount) values (102, 21, 60);
+insert into stock (product_id, storage_id, amount) values (152, 21, 60);
+insert into stock (product_id, storage_id, amount) values (189, 21, 60);
+
+insert into stock (product_id, storage_id, amount) values (10, 22, 10);
+insert into stock (product_id, storage_id, amount) values (21, 22, 4);
+insert into stock (product_id, storage_id, amount) values (102, 22, 51);
+insert into stock (product_id, storage_id, amount) values (152, 22, 10);
+insert into stock (product_id, storage_id, amount) values (189, 22, 3);
+
+insert into stock (product_id, storage_id, amount) values (10, 23, 1);
+insert into stock (product_id, storage_id, amount) values (21, 23, 1);
+insert into stock (product_id, storage_id, amount) values (102, 23, 1);
+insert into stock (product_id, storage_id, amount) values (152, 23, 0);
+insert into stock (product_id, storage_id, amount) values (189, 23, 1);
 
 insert into stock (product_id, storage_id, amount) values (59, 20, 60);
 insert into stock (product_id, storage_id, amount) values (27, 17, 25);
