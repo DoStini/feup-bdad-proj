@@ -23,8 +23,6 @@ BEGIN
                     WHERE cart_quantity.cart_id=new.id)
     )
         THEN raise(abort, "No warehouse with stock available to send package")
-    ELSE
-        0
     END;
 
     -- Updating the cart prices
