@@ -1,0 +1,1 @@
+--Relacionar rating dos produtos, categoria e empresa (ordenar empresas que melhor trabalham numa dada categoria) - nando

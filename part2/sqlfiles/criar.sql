@@ -226,6 +226,7 @@ CREATE TABLE "order" (
     CONSTRAINT order_employee_id_fk FOREIGN KEY(employee_id) REFERENCES employee(id)
                             ON DELETE SET NULL
                             ON UPDATE CASCADE,
+                            
     CONSTRAINT order_id_fk FOREIGN KEY(id) REFERENCES cart(id)
                             ON DELETE RESTRICT
                             ON UPDATE CASCADE,
