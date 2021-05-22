@@ -943,7 +943,7 @@ insert into "order" (id, employee_id, status) values (6, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (9, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (10, 60, 'shipped');
 insert into "order" (id, employee_id, status) values (11, 47, 'shipped');
-insert into "order" (id, employee_id, status) values (12, 27, 'shipped');
+insert into "order" (id, employee_id, status) values (12, 56, 'shipped');
 
 
 
