@@ -8,27 +8,27 @@ from (
 		(select count(*)
 			from payment_mb_way as mb
 				INNER JOIN "order" as ord on ord.id = mb.id 
-					INNER JOIN shipment as sh on sh.id = ord.id
-						INNER JOIN address as ad on ad.id = sh.address_id
-							INNER JOIN city on ad.city_id = city.id
-								INNER JOIN country as co on co.id=city.country_id 
-									where co.id = country.id) as c1,
+				INNER JOIN shipment as sh on sh.id = ord.id
+				INNER JOIN address as ad on ad.id = sh.address_id
+				INNER JOIN city on ad.city_id = city.id
+				INNER JOIN country as co on co.id=city.country_id 
+				where co.id = country.id) as c1,
 		(select count(*)
 			from payment_credit_card as cc
 				INNER JOIN "order" as ord on ord.id = cc.id 
-					INNER JOIN shipment as sh on sh.id = ord.id
-						INNER JOIN address as ad on ad.id = sh.address_id
-							INNER JOIN city on ad.city_id = city.id
-								INNER JOIN country as co on co.id=city.country_id 
-									where co.id = country.id) as c2,
+				INNER JOIN shipment as sh on sh.id = ord.id
+				INNER JOIN address as ad on ad.id = sh.address_id
+				INNER JOIN city on ad.city_id = city.id
+				INNER JOIN country as co on co.id=city.country_id 
+				where co.id = country.id) as c2,
 		(select name
 			from shipment as sh
 				INNER JOIN address as ad on ad.id = sh.address_id
-					INNER JOIN city on ad.city_id = city.id
-						INNER JOIN "order" as ord on ord.id = sh.id
-							INNER JOIN cart as ca on ca.id = ord.id
-								INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
-									INNER JOIN product as pr on cq.product_id = pr.id
+				INNER JOIN city on ad.city_id = city.id
+				INNER JOIN "order" as ord on ord.id = sh.id
+				INNER JOIN cart as ca on ca.id = ord.id
+				INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
+				INNER JOIN product as pr on cq.product_id = pr.id
 
 			where city.country_id = country.id
 
@@ -38,11 +38,11 @@ from (
 		(select sum(amount)
 			from shipment as sh
 				INNER JOIN address as ad on ad.id = sh.address_id
-					INNER JOIN city on ad.city_id = city.id
-						INNER JOIN "order" as ord on ord.id = sh.id
-							INNER JOIN cart as ca on ca.id = ord.id
-								INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
-									INNER JOIN product as pr on cq.product_id = pr.id
+				INNER JOIN city on ad.city_id = city.id
+				INNER JOIN "order" as ord on ord.id = sh.id
+				INNER JOIN cart as ca on ca.id = ord.id
+				INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
+				INNER JOIN product as pr on cq.product_id = pr.id
 
 			where city.country_id = country.id
 
@@ -52,11 +52,11 @@ from (
 		(select sum(cq.amount*cq.price)
 			from shipment as sh
 				INNER JOIN address as ad on ad.id = sh.address_id
-					INNER JOIN city on ad.city_id = city.id
-						INNER JOIN "order" as ord on ord.id = sh.id
-							INNER JOIN cart as ca on ca.id = ord.id
-								INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
-									INNER JOIN product as pr on cq.product_id = pr.id
+				INNER JOIN city on ad.city_id = city.id
+				INNER JOIN "order" as ord on ord.id = sh.id
+				INNER JOIN cart as ca on ca.id = ord.id
+				INNER JOIN cart_quantity as cq on ca.id = cq.cart_id
+				INNER JOIN product as pr on cq.product_id = pr.id
 
 			where city.country_id = country.id
 
