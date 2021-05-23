@@ -1,5 +1,3 @@
-.read gatilho2_adiciona.sql
-
 SELECT "SHOULD FAIL";
 insert into "order" (id, employee_id, status) values (12, NULL, 'waiting'); -- Should fail
 
@@ -10,5 +8,3 @@ insert into "order" (id, employee_id, status) values (11, NULL, 'waiting');
 SELECT "AFTER INSERT";
 SELECT * FROM stock WHERE storage_id = 21;
 SELECT * FROM cart_quantity WHERE cart_quantity.cart_id=11;
-
-.read gatilho2_remove.sql

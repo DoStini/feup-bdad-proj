@@ -32,6 +32,7 @@ BEGIN
         WHERE 
             cart_quantity.cart_id=new.id;
 
+    -- Updating the stock on the storage
     UPDATE stock
         SET amount = stock.amount - 
                         (SELECT amount FROM cart_quantity
@@ -53,16 +54,3 @@ BEGIN
 
 
 END;
-
-DROP VIEW IF EXISTS current;
-CREATE VIEW current AS SELECT 11;
-
-SELECT stock.storage_id, sum(amount) as total FROM(
-SELECT *, storage_id as stid FROM count_valid_stock 
-    WHERE cart_id=(SELECT * FROM current)
-        AND prods=(SELECT count(*) FROM cart_quantity 
-                WHERE cart_quantity.cart_id=(SELECT * from current)))
-    JOIN stock ON stock.storage_id=stid
-    GROUP BY stid
-    ORDER BY total DESC
-    LIMIT 1;
