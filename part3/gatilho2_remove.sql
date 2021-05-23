@@ -1,0 +1,1 @@
+DROP TRIGGER IF EXISTS verify_stock_and_update;
