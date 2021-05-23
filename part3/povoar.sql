@@ -700,7 +700,9 @@ insert into cart_quantity (cart_id, product_id, amount,price) values (2, 127, 90
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 162, 27, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 6, 77, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 106, 72, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 152, 92, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 43, 29, 3);
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 27, 3, 34);
+
 
 ---------------------------------------------------------------------------------------------------------
 

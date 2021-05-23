@@ -1,9 +1,5 @@
---categoria de produtos recomendada para cada cliente - ordenar categorias mais compradas por cada cliente - nando
-
--- cliente | categoria mais comprada
-
 select 	client_name as "Client Name",
-		category_name as "Category Name"
+		category_name as "Best Category Name"
 from (
 	select 
 		(select name from person
