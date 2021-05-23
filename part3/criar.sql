@@ -372,7 +372,6 @@ CREATE TABLE review(
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
 
-
 CREATE VIEW order_paid AS
 SELECT "order".id as id
 FROM "order"

@@ -1926,7 +1926,6 @@ insert into stock (product_id, storage_id, amount) values (24, 19, 130);
 insert into stock (product_id, storage_id, amount) values (104, 4, 226);
 insert into stock (product_id, storage_id, amount) values (122, 13, 155);
 
-
 insert into "order" (id, employee_id, date, status) values (2, 38, '2021-05-17',  'delivered');
 insert into "order" (id, employee_id, date, status) values (1, 35, '2021-05-15', 'shipped');
 insert into "order" (id, employee_id, date, status) values (3, 53, '2021-05-14','shipped');
@@ -1955,6 +1954,14 @@ insert into payment_credit_card (id, payment_value, card_number, card_name, code
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (5, 47.6, '2928616322', 'Woodie Sporgeon', 788);
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (7, 4.23, '7494418075', 'Joli Yeo', 30);
 
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2022-04-03 13:43:20', null, 569.71373, 19, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2022-07-21 08:02:06', null, 135.8015, 37, 2);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (9, '2022-07-04 04:40:39', null, 798.1715, 51, 1);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (4, '2022-05-15 12:49:27', null, 569.7094, 7, 4);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
+
 insert into review (order_id, product_id, title, description, rating) values (1, 57, 'Blot, The', 'Cross-group global synergy', 0.2);
 insert into review (order_id, product_id, title, description, rating) values (2, 114, 'Killer Inside Me, The', 'User-friendly background project', 0.1);
 insert into review (order_id, product_id, title, description, rating) values (3, 188, 'Sonny Boy', 'Advanced empowering data-warehouse', 1.9);
@@ -1965,5 +1972,6 @@ insert into review (order_id, product_id, title, description, rating) values (7,
 insert into review (order_id, product_id, title, description, rating) values (5, 21, 'Int1234ersection', 'Streamlined motivating function', 2.0);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
+
 insert into review (order_id, product_id, title, description, rating) values (1, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 5);
 
