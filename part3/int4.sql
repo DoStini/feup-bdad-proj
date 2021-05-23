@@ -2,8 +2,8 @@
 
 -- cliente | categoria mais comprada
 
-select 	client_name,
-		category_name
+select 	client_name as "Client Name",
+		category_name as "Category Name"
 from (
 	select 
 		(select name from person
