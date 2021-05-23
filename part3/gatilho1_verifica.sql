@@ -46,5 +46,6 @@ select * from review where order_id = 54321;
 
 
 .read gatilho1_remove.sql 
+--to run this file more than once without giving an error due to the creation of equal data:
 .read criar.sql
 .read povoar.sql
