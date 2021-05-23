@@ -370,6 +370,9 @@ insert into cart (client_id) values(4);
 insert into cart (client_id) values(10);
 insert into cart (client_id) values(11);
 insert into cart (client_id) values(12);
+insert into cart (client_id) values(4);
+insert into cart (client_id) values(4);
+
 
 insert into manufacturer (name, head_office_address_id) values ('Eidel', 100);
 insert into manufacturer (name, head_office_address_id) values ('Skibox', 48);
@@ -725,6 +728,19 @@ insert into cart_quantity (cart_id, product_id, amount) values (12, 10, 10);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 11, 1000);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 50, 10);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 59, 10);
+
+
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 20, 12, 17);
+insert into cart_quantity (cart_id, product_id, amount, price) values (11, 25, 14, 20);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 51, 15, 5);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 90, 1, 6);
+insert into cart_quantity (cart_id, product_id, amount, price) values (4, 27, 12, 10);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 121, 95, 12);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 199, 21, 13);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 127, 56, 22);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 192, 43, 4);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 92, 21, 11);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 72, 1, 14);
 
 ---------------------------------------------------------------------------------------------------------
 
