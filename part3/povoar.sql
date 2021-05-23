@@ -636,6 +636,10 @@ insert into cart_quantity (cart_id, product_id, amount) values (2, 98, 98);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 65, 95);
 insert into cart_quantity (cart_id, product_id, amount) values (3, 152, 51);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 41, 21);
+insert into cart_quantity (cart_id, product_id, amount) values (5, 66, 93);
+insert into cart_quantity (cart_id, product_id, amount) values (1, 43, 32);
+insert into cart_quantity (cart_id, product_id, amount) values (3, 112, 46);
+
 insert into cart_quantity (cart_id, product_id, amount, price) values (5, 67, 93, 10);
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 43, 32, 5);
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 112, 46, 16);
@@ -694,7 +698,7 @@ insert into cart_quantity (cart_id, product_id, amount) values (2, 84, 18);
 insert into cart_quantity (cart_id, product_id, amount) values (2, 176, 29);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 148, 18);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 54, 29);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 67, 15);
+insert into cart_quantity (cart_id, product_id, amount) values (3, 66, 15);
 insert into cart_quantity (cart_id, product_id, amount) values (1, 185, 34);
 insert into cart_quantity (cart_id, product_id, amount) values (3, 21, 63);
 insert into cart_quantity (cart_id, product_id, amount) values (4, 35, 51);
@@ -1961,4 +1965,5 @@ insert into review (order_id, product_id, title, description, rating) values (7,
 insert into review (order_id, product_id, title, description, rating) values (5, 21, 'Int1234ersection', 'Streamlined motivating function', 2.0);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
+insert into review (order_id, product_id, title, description, rating) values (1, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 5);
 
