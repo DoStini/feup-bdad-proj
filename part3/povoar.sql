@@ -623,13 +623,13 @@ insert into cart_quantity (cart_id, product_id, amount,price) values (2, 158, 5,
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 184, 62, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 49, 31, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 13, 32, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 66, 88, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 66, 88, 10);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 87, 60, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 76, 28, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 124, 64, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 124, 64, 12);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 21, 93, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 57, 36, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 58, 76, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 58, 76, 13);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 186, 67, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 147, 20, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 72, 45, 5);
@@ -651,14 +651,14 @@ insert into cart_quantity (cart_id, product_id, amount,price) values (4, 163, 52
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 3, 43, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 187, 22, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 117, 76, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 134, 30, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 134, 30, 12);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 44, 42, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 31, 75, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 78, 83, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 5, 84, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 138, 85, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 52, 80, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 60, 95, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 60, 95, 10);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 87, 100, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 108, 18, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 166, 46, 5);
@@ -666,23 +666,23 @@ insert into cart_quantity (cart_id, product_id, amount,price) values (5, 26, 45,
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 162, 88, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 109, 43, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 24, 29, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 167, 62, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 167, 62, 20);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 65, 80, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 18, 77, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 95, 99, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 157, 96, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 157, 96, 23);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 31, 40, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 154, 83, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 70, 66, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 156, 45, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (3, 191, 69, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 44, 9, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 44, 9, 23);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 157, 39, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 102, 74, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 15, 11, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (4, 82, 16, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 19, 75, 5);
-insert into cart_quantity (cart_id, product_id, amount,price) values (1, 20, 53, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 19, 75, 25);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 20, 53, 20);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 62, 71, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (1, 118, 94, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (5, 33, 6, 5);
@@ -709,6 +709,18 @@ insert into cart_quantity (cart_id, product_id, amount,price) values (4, 6, 77, 
 insert into cart_quantity (cart_id, product_id, amount,price) values (2, 106, 72, 5);
 insert into cart_quantity (cart_id, product_id, amount,price) values (8, 43, 29, 3);
 insert into cart_quantity (cart_id, product_id, amount,price) values (10, 27, 3, 34);
+
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 20, 12, 50);
+insert into cart_quantity (cart_id, product_id, amount, price) values (11, 25, 14, 20);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 51, 15, 5);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 90, 1, 6);
+insert into cart_quantity (cart_id, product_id, amount, price) values (4, 27, 12, 10);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 121, 95, 12);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 199, 21, 13);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 127, 56, 22);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 192, 43, 4);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 92, 21, 11);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 72, 1, 14);
 
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 43, 32, 5);
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 112, 46, 16);
@@ -1041,6 +1053,14 @@ insert into stock (product_id, storage_id, amount) values (21, 23, 1);
 insert into stock (product_id, storage_id, amount) values (102, 23, 1);
 insert into stock (product_id, storage_id, amount) values (152, 23, 0);
 insert into stock (product_id, storage_id, amount) values (189, 23, 1);
+
+insert into stock (product_id, storage_id, amount) values (25, 21, 60);
+insert into stock (product_id, storage_id, amount) values (91, 21, 60);
+insert into stock (product_id, storage_id, amount) values (137, 21, 60);
+insert into stock (product_id, storage_id, amount) values (150, 21, 60);
+insert into stock (product_id, storage_id, amount) values (154, 21, 60);
+insert into stock (product_id, storage_id, amount) values (172, 21, 60);
+insert into stock (product_id, storage_id, amount) values (179, 21, 60);
 
 insert into stock (product_id, storage_id, amount) values (59, 20, 60);
 insert into stock (product_id, storage_id, amount) values (27, 17, 25);
@@ -1925,16 +1945,16 @@ insert into stock (product_id, storage_id, amount) values (24, 19, 130);
 insert into stock (product_id, storage_id, amount) values (104, 4, 226);
 insert into stock (product_id, storage_id, amount) values (122, 13, 155);
 
-insert into "order" (id, employee_id, status) values (2, 38, 'delivered');
-insert into "order" (id, employee_id, status) values (1, 35, 'shipped');
+insert into "order" (id, employee_id, status) values (2, 44, 'delivered');
+insert into "order" (id, employee_id, status) values (1, 44, 'shipped');
 insert into "order" (id, employee_id, status) values (3, 53, 'shipped');
 insert into "order" (id, employee_id, status) values (4, 44, 'delivered');
-insert into "order" (id, employee_id, status) values (5, 33, 'delivered');
-insert into "order" (id, employee_id, status) values (7, 45, 'processing');
-insert into "order" (id, employee_id, status) values (8, 51, 'delivered');
+insert into "order" (id, employee_id, status) values (5, 53, 'delivered');
+insert into "order" (id, employee_id, status) values (7, 53, 'processing');
+insert into "order" (id, employee_id, status) values (8, 53, 'delivered');
 insert into "order" (id, employee_id, status) values (6, NULL, 'waiting');
 insert into "order" (id, employee_id, status) values (9, NULL, 'waiting');
-insert into "order" (id, employee_id, status) values (10, 60, 'shipped');
+insert into "order" (id, employee_id, status) values (10, 44, 'shipped');
 insert into "order" (id, employee_id, status) values (11, 47, 'shipped');
 insert into "order" (id, employee_id, status) values (12, 56, 'shipped');
 
@@ -1963,67 +1983,143 @@ insert into shipment (id, shipment_date, reception_date, distance, address_id, s
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (11, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 1827.1231, 2, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (12, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 2);
 
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 57, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (1, 57, 'Blot, The', 'Cross-group global synergy', 0.2);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 114, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (2, 114, 'Killer Inside Me, The', 'User-friendly background project', 0.1);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 188, 35, 5);
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (3, 20.43, '2237190123');
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (3, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 2);
 insert into review (order_id, product_id, title, description, rating) values (3, 188, 'Sonny Boy', 'Advanced empowering data-warehouse', 1.9);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 130, 35, 5);
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (5, 13.43, '2237190123');
 insert into review (order_id, product_id, title, description, rating) values (5, 130, 'Intersection', 'Streamlined motivating function', 2.0);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (6, 37, 35, 5);
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (6, 84.13, '4053102049', 'Conrade Shergold', 564);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (6, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 3);
 insert into review (order_id, product_id, title, description, rating) values (6, 37, 'Hostel: Part III ', 'Reverse-engineered scalable focus group', 2.9);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 5, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (7, 5, 'Fallen Idol, The', 'Optional context-sensitive paradigm', 0.9);
+
 insert into review (order_id, product_id, title, description, rating) values (5, 21, 'Int1234ersection', 'Streamlined motivating function', 2.0);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 121, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 31, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
 	
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 172, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (2, 172, 'Guide for the Married Man, A', 'Function-based context-sensitive protocol', 1.052);
-insert into review (order_id, product_id, title, description, rating) values (5, 69, 'Hunchback of Notre Dame, The (Notre Dame de Paris)', 'Programmable asymmetric open architecture', 2.259);
-insert into review (order_id, product_id, title, description, rating) values (12, 2, 'One-Way Ticket to Mombasa (Menolippu Mombasaan)', 'Configurable maximized encryption', 2.807);
-insert into review (order_id, product_id, title, description, rating) values (7, 4, 'First Time, The', 'Expanded high-level frame', 1.677);
-insert into review (order_id, product_id, title, description, rating) values (3, 161, 'Maniac Cop 2', 'Exclusive interactive solution', 3.236);
-insert into review (order_id, product_id, title, description, rating) values (8, 107, 'Closure', 'Managed attitude-oriented superstructure', 4.066);
-insert into review (order_id, product_id, title, description, rating) values (2, 140, 'Ten Seconds to Hell', 'Triple-buffered even-keeled strategy', 4.84);
-insert into review (order_id, product_id, title, description, rating) values (3, 48, 'American Buffalo', 'Self-enabling national attitude', 3.886);
-insert into review (order_id, product_id, title, description, rating) values (7, 191, 'Freaked', 'Integrated bi-directional approach', 1.755);
-insert into review (order_id, product_id, title, description, rating) values (10, 162, 'Apart from You (After Our Separation) (Kimi to wakarete)', 'Quality-focused 24/7 archive', 3.126);
-insert into review (order_id, product_id, title, description, rating) values (5, 116, 'The Fox and the Hare', 'Organic secondary superstructure', 4.008);
-insert into review (order_id, product_id, title, description, rating) values (11, 150, 'Letter, The (La lettre)', 'Team-oriented transitional flexibility', 1.981);
-insert into review (order_id, product_id, title, description, rating) values (8, 159, 'Give My Regards to Broad Street', 'Multi-lateral intangible middleware', 2.357);
-insert into review (order_id, product_id, title, description, rating) values (11, 91, 'Sheik, The', 'Focused next generation success', 3.727);
-insert into review (order_id, product_id, title, description, rating) values (6, 143, 'Blood from the Mummy''s Tomb', 'Fundamental uniform flexibility', 1.045);
-insert into review (order_id, product_id, title, description, rating) values (7, 111, 'Son of Paleface', 'Customizable system-worthy approach', 4.924);
-insert into review (order_id, product_id, title, description, rating) values (1, 131, 'Love & Pop', 'Business-focused systemic middleware', 3.762);
-insert into review (order_id, product_id, title, description, rating) values (2, 52, 'Witch Who Came from the Sea, The', 'Balanced background Graphical User Interface', 0.863);
-insert into review (order_id, product_id, title, description, rating) values (3, 114, 'Derek', 'Fundamental optimizing middleware', 2.685);
-insert into review (order_id, product_id, title, description, rating) values (9, 120, 'Kings of Mykonos, The', 'Upgradable fault-tolerant pricing structure', 3.533);
-insert into review (order_id, product_id, title, description, rating) values (5, 113, 'Woman''s Tale, A', 'Fully-configurable solution-oriented artificial intelligence', 1.93);
-insert into review (order_id, product_id, title, description, rating) values (11, 172, 'Zatoichi Goes to the Fire Festival', 'Team-oriented maximized throughput', 1.49);
-insert into review (order_id, product_id, title, description, rating) values (9, 187, 'Flesh Merchant, The (Wild and Wicked, The)', 'Face to face logistical archive', 3.613);
-insert into review (order_id, product_id, title, description, rating) values (7, 140, 'Susan Lenox (Her Fall and Rise)', 'Down-sized transitional alliance', 4.691);
-insert into review (order_id, product_id, title, description, rating) values (1, 190, 'Somewhere in the Night', 'Reactive regional interface', 4.177);
-insert into review (order_id, product_id, title, description, rating) values (2, 77, 'Heart and Souls', 'Profit-focused incremental access', 2.031);
-insert into review (order_id, product_id, title, description, rating) values (10, 46, 'Delicatessen', 'Inverse zero administration hub', 1.448);
-insert into review (order_id, product_id, title, description, rating) values (11, 154, 'In Your Eyes', 'Balanced transitional projection', 0.866);
-insert into review (order_id, product_id, title, description, rating) values (8, 72, 'Beyond the Poseidon Adventure', 'Reduced reciprocal focus group', 2.264);
-insert into review (order_id, product_id, title, description, rating) values (3, 58, 'The Aggression Scale', 'Focused hybrid challenge', 1.524);
-insert into review (order_id, product_id, title, description, rating) values (11, 137, 'Patriot, The', 'Cross-group analyzing software', 2.622);
-insert into review (order_id, product_id, title, description, rating) values (7, 174, 'One Man Band', 'Inverse cohesive pricing structure', 1.385);
-insert into review (order_id, product_id, title, description, rating) values (5, 176, 'Loss of a Teardrop Diamond, The', 'Right-sized hybrid groupware', 4.945);
-insert into review (order_id, product_id, title, description, rating) values (11, 179, 'Gerhard Richter Painting', 'Face to face regional flexibility', 2.657);
-insert into review (order_id, product_id, title, description, rating) values (12, 105, 'Coco Chanel & Igor Stravinsky', 'Function-based static structure', 2.723);
-insert into review (order_id, product_id, title, description, rating) values (10, 18, 'Seeing Other People', 'Front-line multi-state architecture', 1.485);
-insert into review (order_id, product_id, title, description, rating) values (4, 169, 'Mrs. Parkington', 'Phased 24/7 function', 0.921);
-insert into review (order_id, product_id, title, description, rating) values (1, 119, 'Lenny', 'Customer-focused systematic conglomeration', 1.534);
-insert into review (order_id, product_id, title, description, rating) values (6, 130, 'American Friend, The (Amerikanische Freund, Der)', 'Quality-focused local adapter', 1.221);
-insert into review (order_id, product_id, title, description, rating) values (9, 200, 'On the Road', 'Diverse 4th generation Graphic Interface', 1.479);
-insert into review (order_id, product_id, title, description, rating) values (2, 15, 'Kicked in the Head', 'Proactive human-resource neural-net', 1.236);
-insert into review (order_id, product_id, title, description, rating) values (11, 25, 'Kamikaze', 'Organic maximized emulation', 2.084);
-insert into review (order_id, product_id, title, description, rating) values (3, 60, 'Cavemen', 'Future-proofed cohesive software', 3.56);
-insert into review (order_id, product_id, title, description, rating) values (12, 30, 'Divine Secrets of the Ya-Ya Sisterhood', 'De-engineered web-enabled capability', 3.367);
-insert into review (order_id, product_id, title, description, rating) values (11, 63, 'Big Fan', 'Ergonomic asynchronous adapter', 0.656);
-insert into review (order_id, product_id, title, description, rating) values (9, 84, 'Young Man with a Horn', 'Ameliorated optimal product', 0.015);
-insert into review (order_id, product_id, title, description, rating) values (10, 73, 'Book of Love', 'Devolved mobile adapter', 3.929);
-insert into review (order_id, product_id, title, description, rating) values (6, 190, 'Bachelor Party Vegas', 'Face to face bi-directional implementation', 0.597);
-insert into review (order_id, product_id, title, description, rating) values (3, 193, 'Kanal', 'Up-sized content-based database', 3.895);
-insert into review (order_id, product_id, title, description, rating) values (10, 120, 'Phantom (O Fantasma)', 'Stand-alone contextually-based frame', 4.384);
 
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 69, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 69, 'Hunchback of Notre Dame, The (Notre Dame de Paris)', 'Programmable asymmetric open architecture', 2.259);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (12, 2, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (12, 2, 'One-Way Ticket to Mombasa (Menolippu Mombasaan)', 'Configurable maximized encryption', 2.807);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 4, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 4, 'First Time, The', 'Expanded high-level frame', 1.677);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 161, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 161, 'Maniac Cop 2', 'Exclusive interactive solution', 3.236);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 107, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 107, 'Closure', 'Managed attitude-oriented superstructure', 4.066);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 140, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 140, 'Ten Seconds to Hell', 'Triple-buffered even-keeled strategy', 4.84);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 48, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 48, 'American Buffalo', 'Self-enabling national attitude', 3.886);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 191, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 191, 'Freaked', 'Integrated bi-directional approach', 1.755);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 162, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 162, 'Apart from You (After Our Separation) (Kimi to wakarete)', 'Quality-focused 24/7 archive', 3.126);
+
+insert into review (order_id, product_id, title, description, rating) values (5, 116, 'The Fox and the Hare', 'Organic secondary superstructure', 4.008);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 150, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 150, 'Letter, The (La lettre)', 'Team-oriented transitional flexibility', 1.981);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 159, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 159, 'Give My Regards to Broad Street', 'Multi-lateral intangible middleware', 2.357);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 91, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 91, 'Sheik, The', 'Focused next generation success', 3.727);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (6, 143, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (6, 143, 'Blood from the Mummy''s Tomb', 'Fundamental uniform flexibility', 1.045);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 111, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 111, 'Son of Paleface', 'Customizable system-worthy approach', 4.924);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 131, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (1, 131, 'Love & Pop', 'Business-focused systemic middleware', 3.762);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 52, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 52, 'Witch Who Came from the Sea, The', 'Balanced background Graphical User Interface', 0.863);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 114, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 114, 'Derek', 'Fundamental optimizing middleware', 2.685);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 120, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (9, 120, 'Kings of Mykonos, The', 'Upgradable fault-tolerant pricing structure', 3.533);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 113, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 113, 'Woman''s Tale, A', 'Fully-configurable solution-oriented artificial intelligence', 1.93);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 172, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 172, 'Zatoichi Goes to the Fire Festival', 'Team-oriented maximized throughput', 1.49);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 187, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (9, 187, 'Flesh Merchant, The (Wild and Wicked, The)', 'Face to face logistical archive', 3.613);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 140, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 140, 'Susan Lenox (Her Fall and Rise)', 'Down-sized transitional alliance', 4.691);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 190, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (1, 190, 'Somewhere in the Night', 'Reactive regional interface', 4.177);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 77, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 77, 'Heart and Souls', 'Profit-focused incremental access', 2.031);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 46, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 46, 'Delicatessen', 'Inverse zero administration hub', 1.448);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 154, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 154, 'In Your Eyes', 'Balanced transitional projection', 0.866);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 72, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 72, 'Beyond the Poseidon Adventure', 'Reduced reciprocal focus group', 2.264);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 58, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 58, 'The Aggression Scale', 'Focused hybrid challenge', 1.524);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 137, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 137, 'Patriot, The', 'Cross-group analyzing software', 2.622);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 174, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 174, 'One Man Band', 'Inverse cohesive pricing structure', 1.385);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 176, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 176, 'Loss of a Teardrop Diamond, The', 'Right-sized hybrid groupware', 4.945);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 179, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 179, 'Gerhard Richter Painting', 'Face to face regional flexibility', 2.657);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (12, 105, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (12, 105, 'Coco Chanel & Igor Stravinsky', 'Function-based static structure', 2.723);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 18, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 18, 'Seeing Other People', 'Front-line multi-state architecture', 1.485);
 
 insert into product_category_applied (product_id, category_id) values (1, 29);
 insert into product_category_applied (product_id, category_id) values (2, 12);
