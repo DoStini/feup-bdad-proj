@@ -372,8 +372,6 @@ CREATE TABLE review(
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
 
-
-
 DROP VIEW IF EXISTS order_paid;
 DROP VIEW IF EXISTS client_purchases;
 
