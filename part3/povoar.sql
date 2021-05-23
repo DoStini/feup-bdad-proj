@@ -1924,11 +1924,11 @@ insert into "order" (id, employee_id, date, status) values (1, 44, '2021-05-15',
 insert into "order" (id, employee_id, date, status) values (3, 44, '2021-05-14','shipped');
 insert into "order" (id, employee_id, date, status) values (4, 44, '2021-05-13', 'delivered');
 insert into "order" (id, employee_id, date, status) values (5, 53, '2021-05-13', 'delivered');
-insert into "order" (id, employee_id, date, status) values (7, 45, '2021-05-10', 'processing');
+insert into "order" (id, employee_id, date, status) values (7, 53, '2021-05-10', 'processing');
 insert into "order" (id, employee_id, date, status) values (8, 53, '2021-05-12','delivered');
 insert into "order" (id, employee_id, date, status) values (6, NULL, '2021-01-22','waiting');
 insert into "order" (id, employee_id, date, status) values (9, NULL, '2021-01-12','waiting');
-insert into "order" (id, employee_id, date, status) values (10, 53, '2021-01-24','shipped');
+insert into "order" (id, employee_id, date, status) values (10, 44, '2021-01-24','shipped');
 
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (8, 13.43, '2237190123');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (10, 3.84, '2735847086');

@@ -6,6 +6,7 @@ SELECT avg(price) FROM cart JOIN
         JOIN cart_quantity
         ON cart.client_id=cid AND cart.id=cart_quantity.cart_id WHERE cart.id <> 4 AND price IS NOT NULL;
 
+SELECT * FROM avg_price_client_bought;
 
 SELECT * FROM
     (SELECT DISTINCT category_id as cat
