@@ -230,7 +230,7 @@ CREATE TABLE "order" (
                             ON DELETE RESTRICT
                             ON UPDATE CASCADE,
 
-    CONSTRAINT order_not_current_date CHECK (date == CURRENT_TIMESTAMP)
+    CONSTRAINT order_not_current_date CHECK (date <= CURRENT_TIMESTAMP)
     CONSTRAINT order_status_options CHECK (status LIKE 'waiting' OR status LIKE 'processing' OR status LIKE 'shipped' OR status LIKE 'delivered')
     CONSTRAINT order_employee_assignment CHECK ((status == 'waiting' AND employee_id IS NULL) OR (status != 'waiting' AND employee_id IS NOT NULL))
 );
@@ -372,3 +372,25 @@ CREATE TABLE review(
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
 
+DROP VIEW IF EXISTS order_paid;
+
+CREATE VIEW order_paid AS
+SELECT "order".id as id
+FROM "order"
+WHERE "order".id IN (
+	SELECT id
+	FROM payment_credit_card
+	UNION
+	SELECT id
+	FROM payment_mb_way
+);
+
+DROP VIEW IF EXISTS client_purchases;
+
+CREATE VIEW client_purchases AS
+SELECT person.id, sum(amount) as purchases
+FROM person JOIN client ON (person.id = client.id)
+JOIN cart ON (cart.client_id = client.id)
+JOIN order_paid ON (cart.id = order_paid.id)
+JOIN cart_quantity ON (cart_quantity.cart_id = cart.id)
+GROUP BY person.id;
