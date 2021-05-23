@@ -372,3 +372,26 @@ CREATE TABLE review(
     CONSTRAINT rating_options CHECK (rating >= 0 OR rating <= 5)
 );
 
+------------------------------------------------------------------------------------------------------
+
+DROP VIEW IF EXISTS order_paid;
+DROP VIEW IF EXISTS client_purchases;
+
+CREATE VIEW order_paid AS
+SELECT "order".id as id
+FROM "order"
+WHERE "order".id IN (
+	SELECT id
+	FROM payment_credit_card
+	UNION
+	SELECT id
+	FROM payment_mb_way
+);
+
+CREATE VIEW client_purchases AS
+SELECT person.id, sum(amount) as purchases
+FROM person JOIN client ON (person.id = client.id)
+JOIN cart ON (cart.client_id = client.id)
+JOIN order_paid ON (cart.id = order_paid.id)
+JOIN cart_quantity ON (cart_quantity.cart_id = cart.id)
+GROUP BY person.id;
