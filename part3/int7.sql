@@ -26,4 +26,3 @@ SELECT
                 (price
                     BETWEEN 0.7*(SELECT * FROM avg_price_client_bought) AND 1.3*(SELECT * FROM avg_price_client_bought))
                     OR (SELECT * FROM avg_price_client_bought) IS NULL; 
-

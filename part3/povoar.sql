@@ -368,10 +368,13 @@ insert into cart (client_id) values(4);
 insert into cart (client_id) values(9);
 insert into cart (client_id) values(4);
 insert into cart (client_id) values(10);
+insert into cart (client_id) values(2);
+insert into cart (client_id) values(7);
 insert into cart (client_id) values(11);
 insert into cart (client_id) values(12);
 insert into cart (client_id) values(4);
 insert into cart (client_id) values(4);
+
 
 
 insert into manufacturer (name, head_office_address_id) values ('Eidel', 100);
@@ -612,100 +615,115 @@ insert into product (name, price, description, manufacturer_id) values ('Vaccum 
 insert into product (name, price, description, manufacturer_id) values ('Sugar - Icing', 25.13, 'Programmable 4th generation groupware', 31);
 insert into product (name, price, description, manufacturer_id) values ('Cheese - Oka', 16.85, 'Programmable national customer loyalty', 10);
 
-insert into cart_quantity (cart_id, product_id, amount) values (4, 103, 35);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 79, 79);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 84, 40);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 158, 5);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 184, 62);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 49, 31);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 13, 32);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 66, 88);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 87, 60);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 76, 28);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 124, 64);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 21, 93);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 58, 76);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 186, 67);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 147, 20);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 72, 45);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 35, 92);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 181, 41);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 63, 23);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 180, 86);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 71, 22);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 189, 90);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 98, 98);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 65, 95);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 152, 51);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 41, 21);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 66, 93);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 43, 32);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 112, 46);
 
-insert into cart_quantity (cart_id, product_id, amount, price) values (5, 67, 93, 10);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 103, 35, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 79, 79, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 84, 40, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 158, 5, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 184, 62, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 49, 31, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 13, 32, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 66, 88, 10);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 87, 60, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 76, 28, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 124, 64, 12);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 21, 93, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 57, 36, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 58, 76, 13);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 186, 67, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 147, 20, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 72, 45, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 35, 92, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 181, 41, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 63, 23, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 180, 86, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 71, 22, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 189, 90, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 98, 98, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 65, 95, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 152, 51, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 41, 21, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 67, 93, 10);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 43, 32, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 112, 46, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 178, 89, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 163, 52, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 3, 43, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 187, 22, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 117, 76, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 134, 30, 12);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 44, 42, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 31, 75, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 78, 83, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 5, 84, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 138, 85, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 52, 80, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 60, 95, 10);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 87, 100, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 108, 18, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 166, 46, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 26, 45, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 162, 88, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 109, 43, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 24, 29, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 167, 62, 20);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 65, 80, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 18, 77, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 95, 99, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 157, 96, 23);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 31, 40, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 154, 83, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 70, 66, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 156, 45, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 191, 69, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 44, 9, 23);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 157, 39, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 102, 74, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 15, 11, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 82, 16, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 19, 75, 25);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 20, 53, 20);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 62, 71, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 118, 94, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 33, 6, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 168, 84, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 120, 1, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 92, 62, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 119, 100, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 95, 61, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 84, 18, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 176, 29, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 148, 18, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 54, 29, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 67, 15, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 185, 34, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 21, 63, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 35, 51, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 116, 58, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 144, 89, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 97, 2, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 73, 26, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 127, 90, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 162, 27, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (4, 6, 77, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 106, 72, 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 43, 29, 3);
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 27, 3, 34);
+
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 20, 12, 50);
+insert into cart_quantity (cart_id, product_id, amount, price) values (11, 25, 14, 20);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 51, 15, 5);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 90, 1, 6);
+insert into cart_quantity (cart_id, product_id, amount, price) values (4, 27, 12, 10);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 121, 95, 12);
+insert into cart_quantity (cart_id, product_id, amount, price) values (1, 199, 21, 13);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 127, 56, 22);
+insert into cart_quantity (cart_id, product_id, amount, price) values (14, 192, 43, 4);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 92, 21, 11);
+insert into cart_quantity (cart_id, product_id, amount, price) values (15, 72, 1, 14);
+
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 43, 32, 5);
 insert into cart_quantity (cart_id, product_id, amount, price) values (7, 112, 46, 16);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 178, 89);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 163, 52);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 3, 43);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 187, 22);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 134, 30);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 44, 42);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 78, 83);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 5, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (6, 5, 20);
-insert into cart_quantity (cart_id, product_id, amount) values (7, 3, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (6, 13, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (10, 5, 20);
-insert into cart_quantity (cart_id, product_id, amount) values (10, 3, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (10, 13, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 138, 85);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 52, 80);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 60, 95);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 87, 100);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 108, 18);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 166, 46);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 26, 45);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 109, 43);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 24, 29);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 167, 62);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 65, 80);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 18, 77);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 95, 99);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 157, 96);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 31, 40);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 154, 83);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 70, 66);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 191, 69);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 44, 9);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 157, 39);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 15, 11);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 82, 16);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 19, 75);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 20, 53);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 62, 71);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 118, 94);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 33, 6);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 168, 84);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 120, 1);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 92, 62);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 119, 100);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 95, 61);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 84, 18);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 176, 29);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 148, 18);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 54, 29);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 66, 15);
-insert into cart_quantity (cart_id, product_id, amount) values (1, 185, 34);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 21, 63);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 35, 51);
-insert into cart_quantity (cart_id, product_id, amount) values (5, 116, 58);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 144, 89);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 97, 2);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 73, 26);
-insert into cart_quantity (cart_id, product_id, amount) values (2, 127, 90);
-insert into cart_quantity (cart_id, product_id, amount) values (3, 162, 27);
-insert into cart_quantity (cart_id, product_id, amount) values (4, 6, 77);
 
 insert into cart_quantity (cart_id, product_id, amount) values (1, 152, 92);
 insert into cart_quantity (cart_id, product_id, amount) values (8, 12, 92);
@@ -718,7 +736,6 @@ insert into cart_quantity (cart_id, product_id, amount) values (10, 39, 20);
 insert into cart_quantity (cart_id, product_id, amount) values (10, 6, 20);
 insert into cart_quantity (cart_id, product_id, amount) values (10, 15, 20);
 
-insert into cart_quantity (cart_id, product_id, amount) values (2, 106, 12);
 insert into cart_quantity (cart_id, product_id, amount) values (11, 152, 10);
 insert into cart_quantity (cart_id, product_id, amount) values (11, 102, 51);
 insert into cart_quantity (cart_id, product_id, amount) values (11, 21, 4);
@@ -728,21 +745,6 @@ insert into cart_quantity (cart_id, product_id, amount) values (12, 10, 10);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 11, 1000);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 50, 10);
 insert into cart_quantity (cart_id, product_id, amount) values (12, 59, 10);
-
-
-insert into cart_quantity (cart_id, product_id, amount, price) values (14, 20, 12, 17);
-insert into cart_quantity (cart_id, product_id, amount, price) values (11, 25, 14, 20);
-insert into cart_quantity (cart_id, product_id, amount, price) values (14, 51, 15, 5);
-insert into cart_quantity (cart_id, product_id, amount, price) values (14, 90, 1, 6);
-insert into cart_quantity (cart_id, product_id, amount, price) values (4, 27, 12, 10);
-insert into cart_quantity (cart_id, product_id, amount, price) values (1, 121, 95, 12);
-insert into cart_quantity (cart_id, product_id, amount, price) values (1, 199, 21, 13);
-insert into cart_quantity (cart_id, product_id, amount, price) values (14, 127, 56, 22);
-insert into cart_quantity (cart_id, product_id, amount, price) values (14, 192, 43, 4);
-insert into cart_quantity (cart_id, product_id, amount, price) values (15, 92, 21, 11);
-insert into cart_quantity (cart_id, product_id, amount, price) values (15, 72, 1, 14);
-
----------------------------------------------------------------------------------------------------------
 
 insert into person_address_applied (person_id, address_id) values (1, 92);
 insert into person_address_applied (person_id, address_id) values (2, 66);
@@ -1051,6 +1053,14 @@ insert into stock (product_id, storage_id, amount) values (21, 23, 1);
 insert into stock (product_id, storage_id, amount) values (102, 23, 1);
 insert into stock (product_id, storage_id, amount) values (152, 23, 0);
 insert into stock (product_id, storage_id, amount) values (189, 23, 1);
+
+insert into stock (product_id, storage_id, amount) values (25, 21, 60);
+insert into stock (product_id, storage_id, amount) values (91, 21, 60);
+insert into stock (product_id, storage_id, amount) values (137, 21, 60);
+insert into stock (product_id, storage_id, amount) values (150, 21, 60);
+insert into stock (product_id, storage_id, amount) values (154, 21, 60);
+insert into stock (product_id, storage_id, amount) values (172, 21, 60);
+insert into stock (product_id, storage_id, amount) values (179, 21, 60);
 
 insert into stock (product_id, storage_id, amount) values (59, 20, 60);
 insert into stock (product_id, storage_id, amount) values (27, 17, 25);
@@ -1935,25 +1945,32 @@ insert into stock (product_id, storage_id, amount) values (24, 19, 130);
 insert into stock (product_id, storage_id, amount) values (104, 4, 226);
 insert into stock (product_id, storage_id, amount) values (122, 13, 155);
 
-insert into "order" (id, employee_id, date, status) values (2, 53, '2021-05-17',  'delivered');
-insert into "order" (id, employee_id, date, status) values (1, 44, '2021-05-15', 'shipped');
-insert into "order" (id, employee_id, date, status) values (3, 44, '2021-05-14','shipped');
-insert into "order" (id, employee_id, date, status) values (4, 44, '2021-05-13', 'delivered');
-insert into "order" (id, employee_id, date, status) values (5, 53, '2021-05-13', 'delivered');
-insert into "order" (id, employee_id, date, status) values (7, 53, '2021-05-10', 'processing');
-insert into "order" (id, employee_id, date, status) values (8, 53, '2021-05-12','delivered');
-insert into "order" (id, employee_id, date, status) values (6, NULL, '2021-01-22','waiting');
-insert into "order" (id, employee_id, date, status) values (9, NULL, '2021-01-12','waiting');
-insert into "order" (id, employee_id, date, status) values (10, 44, '2021-01-24','shipped');
+insert into "order" (id, employee_id, status) values (2, 44, 'delivered');
+insert into "order" (id, employee_id, status) values (1, 44, 'shipped');
+insert into "order" (id, employee_id, status) values (3, 53, 'shipped');
+insert into "order" (id, employee_id, status) values (4, 44, 'delivered');
+insert into "order" (id, employee_id, status) values (5, 53, 'delivered');
+insert into "order" (id, employee_id, status) values (7, 53, 'processing');
+insert into "order" (id, employee_id, status) values (8, 53, 'delivered');
+insert into "order" (id, employee_id, status) values (6, NULL, 'waiting');
+insert into "order" (id, employee_id, status) values (9, NULL, 'waiting');
+insert into "order" (id, employee_id, status) values (10, 44, 'shipped');
+insert into "order" (id, employee_id, status) values (11, 47, 'shipped');
+insert into "order" (id, employee_id, status) values (12, 56, 'shipped');
+
 
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (8, 13.43, '2237190123');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (10, 3.84, '2735847086');
-insert into payment_mb_way (id, payment_value, payment_phone_number) values (9, 11.88, '9615238163');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (2, 11.88, '9615238163');
 insert into payment_mb_way (id, payment_value, payment_phone_number) values (4, 19.1, '8084323723');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (11, 147.88, '9615238163');
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (12, 13.88, '7494418075');
+
 
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (1, 84.13, '4053102049', 'Conrade Shergold', 564);
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (5, 47.6, '2928616322', 'Woodie Sporgeon', 788);
 insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (7, 4.23, '7494418075', 'Joli Yeo', 30);
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (9, 4.23, '7494418075', 'Joli Yeo', 30);
 
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (8, '2022-04-03 13:43:20', null, 569.71373, 19, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (10, '2022-07-21 08:02:06', null, 135.8015, 37, 2);
@@ -1962,17 +1979,335 @@ insert into shipment (id, shipment_date, reception_date, distance, address_id, s
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (1, '2022-05-24 14:04:12', '2023-01-12 10:08:39', 616.72763, 40, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (5, '2022-06-10 06:38:42', '2023-01-06 07:08:39', 739.12758, 63, 3);
 insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (7, '2022-04-20 13:50:36', null, 693.69008, 63, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (2, '2022-03-20 15:55:36', '2025-01-06 07:08:39', 257.68008, 2, 4);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (11, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 1827.1231, 2, 3);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (12, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 2);
 
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 57, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (1, 57, 'Blot, The', 'Cross-group global synergy', 0.2);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 114, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (2, 114, 'Killer Inside Me, The', 'User-friendly background project', 0.1);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 188, 35, 5);
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (3, 20.43, '2237190123');
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (3, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 2);
 insert into review (order_id, product_id, title, description, rating) values (3, 188, 'Sonny Boy', 'Advanced empowering data-warehouse', 1.9);
---insert into review (order_id, product_id, title, description, rating) values (4, 94, 'Interpreter, The', 'Configurable neutral array', 1.2);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 130, 35, 5);
+insert into payment_mb_way (id, payment_value, payment_phone_number) values (5, 13.43, '2237190123');
 insert into review (order_id, product_id, title, description, rating) values (5, 130, 'Intersection', 'Streamlined motivating function', 2.0);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (6, 37, 35, 5);
+insert into payment_credit_card (id, payment_value, card_number, card_name, code) values (6, 84.13, '4053102049', 'Conrade Shergold', 564);
+insert into shipment (id, shipment_date, reception_date, distance, address_id, shipment_type_id) values (6, '2022-05-22 14:56:36', '2022-06-06 08:30:39', 123.1231, 63, 3);
 insert into review (order_id, product_id, title, description, rating) values (6, 37, 'Hostel: Part III ', 'Reverse-engineered scalable focus group', 2.9);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 5, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (7, 5, 'Fallen Idol, The', 'Optional context-sensitive paradigm', 0.9);
+
 insert into review (order_id, product_id, title, description, rating) values (5, 21, 'Int1234ersection', 'Streamlined motivating function', 2.0);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 121, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (8, 121, 'Locked Out (Enfermés dehors)', 'Up-sized radical protocol', 2.7);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 31, 35, 5);
 insert into review (order_id, product_id, title, description, rating) values (9, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 2.2);
+	
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 172, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 172, 'Guide for the Married Man, A', 'Function-based context-sensitive protocol', 1.052);
 
-insert into review (order_id, product_id, title, description, rating) values (1, 31, 'Man of My Life, The (L''homme de sa vie)', 'Optional motivating capability', 5);
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 69, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 69, 'Hunchback of Notre Dame, The (Notre Dame de Paris)', 'Programmable asymmetric open architecture', 2.259);
 
+insert into cart_quantity (cart_id, product_id, amount,price) values (12, 2, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (12, 2, 'One-Way Ticket to Mombasa (Menolippu Mombasaan)', 'Configurable maximized encryption', 2.807);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 4, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 4, 'First Time, The', 'Expanded high-level frame', 1.677);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 161, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 161, 'Maniac Cop 2', 'Exclusive interactive solution', 3.236);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 107, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 107, 'Closure', 'Managed attitude-oriented superstructure', 4.066);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 140, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 140, 'Ten Seconds to Hell', 'Triple-buffered even-keeled strategy', 4.84);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 48, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 48, 'American Buffalo', 'Self-enabling national attitude', 3.886);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 191, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 191, 'Freaked', 'Integrated bi-directional approach', 1.755);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 162, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 162, 'Apart from You (After Our Separation) (Kimi to wakarete)', 'Quality-focused 24/7 archive', 3.126);
+
+insert into review (order_id, product_id, title, description, rating) values (5, 116, 'The Fox and the Hare', 'Organic secondary superstructure', 4.008);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 150, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 150, 'Letter, The (La lettre)', 'Team-oriented transitional flexibility', 1.981);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 159, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 159, 'Give My Regards to Broad Street', 'Multi-lateral intangible middleware', 2.357);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 91, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 91, 'Sheik, The', 'Focused next generation success', 3.727);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (6, 143, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (6, 143, 'Blood from the Mummy''s Tomb', 'Fundamental uniform flexibility', 1.045);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 111, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 111, 'Son of Paleface', 'Customizable system-worthy approach', 4.924);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 131, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (1, 131, 'Love & Pop', 'Business-focused systemic middleware', 3.762);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 52, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 52, 'Witch Who Came from the Sea, The', 'Balanced background Graphical User Interface', 0.863);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 114, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 114, 'Derek', 'Fundamental optimizing middleware', 2.685);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 120, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (9, 120, 'Kings of Mykonos, The', 'Upgradable fault-tolerant pricing structure', 3.533);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 113, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 113, 'Woman''s Tale, A', 'Fully-configurable solution-oriented artificial intelligence', 1.93);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 172, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 172, 'Zatoichi Goes to the Fire Festival', 'Team-oriented maximized throughput', 1.49);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (9, 187, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (9, 187, 'Flesh Merchant, The (Wild and Wicked, The)', 'Face to face logistical archive', 3.613);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 140, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 140, 'Susan Lenox (Her Fall and Rise)', 'Down-sized transitional alliance', 4.691);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (1, 190, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (1, 190, 'Somewhere in the Night', 'Reactive regional interface', 4.177);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (2, 77, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (2, 77, 'Heart and Souls', 'Profit-focused incremental access', 2.031);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 46, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 46, 'Delicatessen', 'Inverse zero administration hub', 1.448);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 154, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 154, 'In Your Eyes', 'Balanced transitional projection', 0.866);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (8, 72, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (8, 72, 'Beyond the Poseidon Adventure', 'Reduced reciprocal focus group', 2.264);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (3, 58, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (3, 58, 'The Aggression Scale', 'Focused hybrid challenge', 1.524);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 137, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 137, 'Patriot, The', 'Cross-group analyzing software', 2.622);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (7, 174, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (7, 174, 'One Man Band', 'Inverse cohesive pricing structure', 1.385);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (5, 176, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (5, 176, 'Loss of a Teardrop Diamond, The', 'Right-sized hybrid groupware', 4.945);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (11, 179, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (11, 179, 'Gerhard Richter Painting', 'Face to face regional flexibility', 2.657);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (12, 105, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (12, 105, 'Coco Chanel & Igor Stravinsky', 'Function-based static structure', 2.723);
+
+insert into cart_quantity (cart_id, product_id, amount,price) values (10, 18, 35, 5);
+insert into review (order_id, product_id, title, description, rating) values (10, 18, 'Seeing Other People', 'Front-line multi-state architecture', 1.485);
+
+insert into product_category_applied (product_id, category_id) values (1, 29);
+insert into product_category_applied (product_id, category_id) values (2, 12);
+insert into product_category_applied (product_id, category_id) values (3, 18);
+insert into product_category_applied (product_id, category_id) values (5, 29);
+insert into product_category_applied (product_id, category_id) values (6, 20);
+insert into product_category_applied (product_id, category_id) values (7, 29);
+insert into product_category_applied (product_id, category_id) values (8, 27);
+insert into product_category_applied (product_id, category_id) values (9, 25);
+insert into product_category_applied (product_id, category_id) values (10, 8);
+insert into product_category_applied (product_id, category_id) values (11, 24);
+insert into product_category_applied (product_id, category_id) values (12, 19);
+insert into product_category_applied (product_id, category_id) values (13, 8);
+insert into product_category_applied (product_id, category_id) values (15, 10);
+insert into product_category_applied (product_id, category_id) values (16, 23);
+insert into product_category_applied (product_id, category_id) values (17, 27);
+insert into product_category_applied (product_id, category_id) values (18, 20);
+insert into product_category_applied (product_id, category_id) values (19, 13);
+insert into product_category_applied (product_id, category_id) values (20, 2);
+insert into product_category_applied (product_id, category_id) values (21, 10);
+insert into product_category_applied (product_id, category_id) values (22, 20);
+insert into product_category_applied (product_id, category_id) values (23, 12);
+insert into product_category_applied (product_id, category_id) values (24, 27);
+insert into product_category_applied (product_id, category_id) values (25, 10);
+insert into product_category_applied (product_id, category_id) values (26, 25);
+insert into product_category_applied (product_id, category_id) values (27, 27);
+insert into product_category_applied (product_id, category_id) values (28, 5);
+insert into product_category_applied (product_id, category_id) values (29, 5);
+insert into product_category_applied (product_id, category_id) values (30, 25);
+insert into product_category_applied (product_id, category_id) values (31, 19);
+insert into product_category_applied (product_id, category_id) values (32, 20);
+insert into product_category_applied (product_id, category_id) values (34, 7);
+insert into product_category_applied (product_id, category_id) values (35, 26);
+insert into product_category_applied (product_id, category_id) values (36, 2);
+insert into product_category_applied (product_id, category_id) values (38, 2);
+insert into product_category_applied (product_id, category_id) values (39, 26);
+insert into product_category_applied (product_id, category_id) values (40, 20);
+insert into product_category_applied (product_id, category_id) values (41, 2);
+insert into product_category_applied (product_id, category_id) values (42, 26);
+insert into product_category_applied (product_id, category_id) values (43, 11);
+insert into product_category_applied (product_id, category_id) values (44, 18);
+insert into product_category_applied (product_id, category_id) values (45, 12);
+insert into product_category_applied (product_id, category_id) values (46, 20);
+insert into product_category_applied (product_id, category_id) values (48, 10);
+insert into product_category_applied (product_id, category_id) values (49, 9);
+insert into product_category_applied (product_id, category_id) values (50, 17);
+insert into product_category_applied (product_id, category_id) values (51, 30);
+insert into product_category_applied (product_id, category_id) values (52, 8);
+insert into product_category_applied (product_id, category_id) values (53, 1);
+insert into product_category_applied (product_id, category_id) values (54, 7);
+insert into product_category_applied (product_id, category_id) values (55, 11);
+insert into product_category_applied (product_id, category_id) values (56, 4);
+insert into product_category_applied (product_id, category_id) values (57, 13);
+insert into product_category_applied (product_id, category_id) values (58, 16);
+insert into product_category_applied (product_id, category_id) values (59, 12);
+insert into product_category_applied (product_id, category_id) values (60, 14);
+insert into product_category_applied (product_id, category_id) values (61, 7);
+insert into product_category_applied (product_id, category_id) values (62, 1);
+insert into product_category_applied (product_id, category_id) values (63, 3);
+insert into product_category_applied (product_id, category_id) values (64, 15);
+insert into product_category_applied (product_id, category_id) values (65, 17);
+insert into product_category_applied (product_id, category_id) values (66, 17);
+insert into product_category_applied (product_id, category_id) values (67, 11);
+insert into product_category_applied (product_id, category_id) values (68, 6);
+insert into product_category_applied (product_id, category_id) values (69, 12);
+insert into product_category_applied (product_id, category_id) values (70, 19);
+insert into product_category_applied (product_id, category_id) values (71, 13);
+insert into product_category_applied (product_id, category_id) values (72, 3);
+insert into product_category_applied (product_id, category_id) values (73, 10);
+insert into product_category_applied (product_id, category_id) values (74, 5);
+insert into product_category_applied (product_id, category_id) values (75, 21);
+insert into product_category_applied (product_id, category_id) values (76, 6);
+insert into product_category_applied (product_id, category_id) values (78, 12);
+insert into product_category_applied (product_id, category_id) values (80, 29);
+insert into product_category_applied (product_id, category_id) values (81, 6);
+insert into product_category_applied (product_id, category_id) values (82, 6);
+insert into product_category_applied (product_id, category_id) values (83, 11);
+insert into product_category_applied (product_id, category_id) values (84, 23);
+insert into product_category_applied (product_id, category_id) values (85, 22);
+insert into product_category_applied (product_id, category_id) values (86, 8);
+insert into product_category_applied (product_id, category_id) values (87, 21);
+insert into product_category_applied (product_id, category_id) values (88, 4);
+insert into product_category_applied (product_id, category_id) values (89, 13);
+insert into product_category_applied (product_id, category_id) values (90, 20);
+insert into product_category_applied (product_id, category_id) values (92, 12);
+insert into product_category_applied (product_id, category_id) values (93, 3);
+insert into product_category_applied (product_id, category_id) values (94, 5);
+insert into product_category_applied (product_id, category_id) values (95, 18);
+insert into product_category_applied (product_id, category_id) values (96, 29);
+insert into product_category_applied (product_id, category_id) values (97, 4);
+insert into product_category_applied (product_id, category_id) values (98, 23);
+insert into product_category_applied (product_id, category_id) values (99, 23);
+insert into product_category_applied (product_id, category_id) values (100, 30);
+insert into product_category_applied (product_id, category_id) values (101, 28);
+insert into product_category_applied (product_id, category_id) values (102, 6);
+insert into product_category_applied (product_id, category_id) values (103, 27);
+insert into product_category_applied (product_id, category_id) values (104, 27);
+insert into product_category_applied (product_id, category_id) values (105, 25);
+insert into product_category_applied (product_id, category_id) values (106, 17);
+insert into product_category_applied (product_id, category_id) values (107, 3);
+insert into product_category_applied (product_id, category_id) values (108, 11);
+insert into product_category_applied (product_id, category_id) values (109, 28);
+insert into product_category_applied (product_id, category_id) values (110, 17);
+insert into product_category_applied (product_id, category_id) values (111, 27);
+insert into product_category_applied (product_id, category_id) values (112, 25);
+insert into product_category_applied (product_id, category_id) values (113, 10);
+insert into product_category_applied (product_id, category_id) values (114, 16);
+insert into product_category_applied (product_id, category_id) values (115, 23);
+insert into product_category_applied (product_id, category_id) values (116, 25);
+insert into product_category_applied (product_id, category_id) values (117, 9);
+insert into product_category_applied (product_id, category_id) values (118, 28);
+insert into product_category_applied (product_id, category_id) values (119, 26);
+insert into product_category_applied (product_id, category_id) values (120, 24);
+insert into product_category_applied (product_id, category_id) values (121, 23);
+insert into product_category_applied (product_id, category_id) values (122, 17);
+insert into product_category_applied (product_id, category_id) values (123, 10);
+insert into product_category_applied (product_id, category_id) values (124, 7);
+insert into product_category_applied (product_id, category_id) values (125, 10);
+insert into product_category_applied (product_id, category_id) values (126, 30);
+insert into product_category_applied (product_id, category_id) values (127, 16);
+insert into product_category_applied (product_id, category_id) values (128, 29);
+insert into product_category_applied (product_id, category_id) values (129, 28);
+insert into product_category_applied (product_id, category_id) values (130, 19);
+insert into product_category_applied (product_id, category_id) values (131, 17);
+insert into product_category_applied (product_id, category_id) values (132, 24);
+insert into product_category_applied (product_id, category_id) values (133, 16);
+insert into product_category_applied (product_id, category_id) values (134, 17);
+insert into product_category_applied (product_id, category_id) values (135, 29);
+insert into product_category_applied (product_id, category_id) values (136, 22);
+insert into product_category_applied (product_id, category_id) values (137, 1);
+insert into product_category_applied (product_id, category_id) values (138, 24);
+insert into product_category_applied (product_id, category_id) values (139, 7);
+insert into product_category_applied (product_id, category_id) values (140, 22);
+insert into product_category_applied (product_id, category_id) values (141, 17);
+insert into product_category_applied (product_id, category_id) values (142, 26);
+insert into product_category_applied (product_id, category_id) values (144, 22);
+insert into product_category_applied (product_id, category_id) values (145, 22);
+insert into product_category_applied (product_id, category_id) values (146, 13);
+insert into product_category_applied (product_id, category_id) values (147, 26);
+insert into product_category_applied (product_id, category_id) values (148, 26);
+insert into product_category_applied (product_id, category_id) values (149, 19);
+insert into product_category_applied (product_id, category_id) values (150, 8);
+insert into product_category_applied (product_id, category_id) values (151, 18);
+insert into product_category_applied (product_id, category_id) values (152, 12);
+insert into product_category_applied (product_id, category_id) values (153, 14);
+insert into product_category_applied (product_id, category_id) values (154, 23);
+insert into product_category_applied (product_id, category_id) values (155, 19);
+insert into product_category_applied (product_id, category_id) values (156, 6);
+insert into product_category_applied (product_id, category_id) values (157, 25);
+insert into product_category_applied (product_id, category_id) values (158, 11);
+insert into product_category_applied (product_id, category_id) values (159, 4);
+insert into product_category_applied (product_id, category_id) values (160, 13);
+insert into product_category_applied (product_id, category_id) values (161, 6);
+insert into product_category_applied (product_id, category_id) values (162, 28);
+insert into product_category_applied (product_id, category_id) values (163, 22);
+insert into product_category_applied (product_id, category_id) values (164, 21);
+insert into product_category_applied (product_id, category_id) values (165, 7);
+insert into product_category_applied (product_id, category_id) values (166, 9);
+insert into product_category_applied (product_id, category_id) values (167, 9);
+insert into product_category_applied (product_id, category_id) values (168, 22);
+insert into product_category_applied (product_id, category_id) values (169, 3);
+insert into product_category_applied (product_id, category_id) values (170, 1);
+insert into product_category_applied (product_id, category_id) values (171, 30);
+insert into product_category_applied (product_id, category_id) values (172, 3);
+insert into product_category_applied (product_id, category_id) values (173, 6);
+insert into product_category_applied (product_id, category_id) values (174, 6);
+insert into product_category_applied (product_id, category_id) values (175, 2);
+insert into product_category_applied (product_id, category_id) values (176, 4);
+insert into product_category_applied (product_id, category_id) values (177, 19);
+insert into product_category_applied (product_id, category_id) values (178, 4);
+insert into product_category_applied (product_id, category_id) values (180, 14);
+insert into product_category_applied (product_id, category_id) values (181, 15);
+insert into product_category_applied (product_id, category_id) values (182, 30);
+insert into product_category_applied (product_id, category_id) values (183, 27);
+insert into product_category_applied (product_id, category_id) values (184, 6);
+insert into product_category_applied (product_id, category_id) values (185, 22);
+insert into product_category_applied (product_id, category_id) values (186, 25);
+insert into product_category_applied (product_id, category_id) values (187, 23);
+insert into product_category_applied (product_id, category_id) values (188, 14);
+insert into product_category_applied (product_id, category_id) values (189, 7);
+insert into product_category_applied (product_id, category_id) values (190, 15);
+insert into product_category_applied (product_id, category_id) values (191, 10);
+insert into product_category_applied (product_id, category_id) values (192, 5);
+insert into product_category_applied (product_id, category_id) values (193, 22);
+insert into product_category_applied (product_id, category_id) values (194, 6);
+insert into product_category_applied (product_id, category_id) values (195, 22);
+insert into product_category_applied (product_id, category_id) values (196, 10);
+insert into product_category_applied (product_id, category_id) values (197, 9);
+insert into product_category_applied (product_id, category_id) values (198, 1);
+insert into product_category_applied (product_id, category_id) values (199, 17);
+insert into product_category_applied (product_id, category_id) values (200, 4);
